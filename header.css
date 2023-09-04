@@ -1,0 +1,40 @@
+body {
+    margin: 0 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.719);
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
+}
+
+header>nav {
+    display: grid;
+    grid-template: 1fr / repeat(5, 90px);
+    padding-right: 20px;
+}
+
+header>nav>a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2px;
+    justify-content: center;
+    transition: all 110ms ease-in;
+    text-decoration: none;
+    color: white;
+    font-family: 'Phudu', 'Roboto Condensed', Helvetica, sans-serif;
+}
+
+header>nav>a:hover,
+header>nav>a.currentNav {
+    background-color: white;
+    color: black;
+}
