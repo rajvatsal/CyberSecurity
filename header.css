@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(0, 0, 0, 9%);
     height: 60px;
     display: flex;
     justify-content: flex-end;
@@ -29,12 +29,15 @@ header>nav>a {
     justify-content: center;
     transition: all 110ms ease-in;
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'Phudu', 'Roboto Condensed', Helvetica, sans-serif;
 }
 
 header>nav>a:hover,
 header>nav>a.currentNav {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.075);
     color: black;
+}
+main {
+    height: 200vh;
 }
