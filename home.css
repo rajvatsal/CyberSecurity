@@ -1,0 +1,10 @@
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('./images/cy2.jpg');
+    background-size: cover;
+}
+.hero-image {
+    flex-grow: 1;
+}
