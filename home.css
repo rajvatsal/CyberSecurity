@@ -13,29 +13,41 @@ header {
     background-image: url(./images/cy.svg);
     aspect-ratio: 1 / 1;
     background-size: cover;
-    width: 85%;
+    width: 70%;
     justify-self: center;
     align-self: center;
 }
 
 .hero-text {
-    padding-left: 20px;
+    padding: 0 20px;
     color: white;
-    font-family: Ubuntu, 'Roboto Condensed';
+    font-family: 'Josefin Sans', Ubuntu, 'Roboto Condensed';
 }
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: max(40px, 4.68vw);
     font-family: Phudu;
 }
 .hero-text h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
+    margin: 20px 0;
 }
 .hero-text h3 {
-    font-size: 1rem;
-    margin: 10px 0;
+    font-size: 1.2rem;
+    margin: 7px 0;
 }
 .hero-text :not(h1) {
-    padding-left: 10px;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 700px) {
+    .hero-image {
+        grid-template: 1fr 1fr / 1fr;
+        text-align: center;
+    }
+    .svg {
+        height: 95%;
+        width: auto;
+        align-self: flex-start;
+    }
 }

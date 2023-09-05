@@ -11,6 +11,7 @@ body {
     top: 0;
     backdrop-filter: blur(10px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.295);
+    overflow: auto;
 }
 
 .nav-bar>a {
