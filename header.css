@@ -13,8 +13,6 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.295);
 }
 
-
-
 .nav-bar {
     display: grid;
     grid-template: 1fr / repeat(5, 100px);
@@ -24,7 +22,6 @@ body {
 .nav-bar>a {
     display: flex;
     align-items: center;
-    height: 100%;
     width: 100%;
     box-sizing: border-box;
     padding-top: 2px;

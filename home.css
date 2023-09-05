@@ -1,10 +1,42 @@
 header {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url('./images/cy2.jpg');
-    background-size: cover;
+    display: grid;
+    grid-template: 60px 1fr / 1fr;
 }
 .hero-image {
     flex-grow: 1;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    background: linear-gradient(112.5deg, rgb(95, 10, 135) 11.4%, rgb(164, 80, 139) 60.2%);
+}
+
+.svg {
+    background-image: url(./images/cy.svg);
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    width: 85%;
+    justify-self: center;
+    align-self: center;
+}
+
+.hero-text {
+    padding-left: 10px;
+}
+.hero-text h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: Phudu;
+}
+
+.hero-text{
+    color: white;
+    font-family: Ubuntu, 'Roboto Condensed';
+}
+.hero-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.hero-text h3 {
+    font-size: 1rem;
+    margin: 10px 0;
 }
