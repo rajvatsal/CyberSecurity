@@ -1,3 +1,10 @@
+.nav-bar>a:first-child {
+    border: 2px solid transparent;
+    border-bottom-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
 header {
     height: calc(100vh - 60px);
     display: flex;
@@ -6,7 +13,7 @@ header {
     flex-grow: 1;
     display: grid;
     grid-template: 1fr / repeat(2, 1fr);
-    background: linear-gradient(112.5deg, rgb(95, 10, 135) 11.4%, rgb(164, 80, 139) 60.2%);
+    background: linear-gradient(112.5deg, rgb(95, 0, 135) 11.4%, rgb(164, 80, 139) 60.2%);
 }
 
 .svg {
@@ -24,7 +31,7 @@ header {
     font-family: 'Josefin Sans', Ubuntu, 'Roboto Condensed';
 }
 .hero-text h1 {
-    font-size: max(40px, 4.68vw);
+    font-size: max(40px, 4.51vw);
     font-family: Phudu;
 }
 .hero-text h2 {
@@ -46,7 +53,7 @@ header {
         text-align: center;
     }
     .svg {
-        height: 95%;
+        height: 85%;
         width: auto;
         align-self: flex-start;
     }
