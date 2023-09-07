@@ -1,4 +1,4 @@
-.nav-bar>a:last-child {
+.nav-bar>a:nth-last-child(2) {
     border: 2px solid transparent;
     border-bottom-color: black;
     color: black !important;

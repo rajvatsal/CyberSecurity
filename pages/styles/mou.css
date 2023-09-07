@@ -1,0 +1,49 @@
+.nav-bar>a:nth-last-child(1) {
+    border: 2px solid transparent;
+    border-bottom-color: black;
+    color: black !important;
+    transition: background-color 110ms ease-in;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+main {
+    grid-row: 2 / 3;
+}
+
+body {
+    grid-template: 1fr / 1fr 85ch 1fr;
+}
+
+h2 {
+    line-height: 1.03;
+}
+
+.anchor-link:hover::before {
+   background-image: url('../../images/link.png');
+   content:"";
+   position: absolute;
+   left: -25px;
+   top: -2px;
+   background-size: cover;
+   width: 18px;
+   height: 18px;
+}
+
+main div {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 1ch;
+}
+
+#images img {
+    max-width: 100%;
+    margin-top: 30px;
+    scroll-margin-top: 100px;
+}
+#images p {
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+:root {
+    --nav-tab-height: 60px;
+}
