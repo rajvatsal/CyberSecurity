@@ -75,3 +75,23 @@ main {
 h2 {
     scroll-margin-top: 100px;
 }
+
+@media only screen and (max-width: 1200px){
+    #navigation {
+        grid-row: 3 / 4;
+        margin-left: 10px;
+    }
+    :root body {
+        grid-template: 1fr / 200px 1fr;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #navigation {
+        display: none;
+    }
+
+    :root body {
+        grid-template-columns: 1fr var(--page-width);
+    }
+}

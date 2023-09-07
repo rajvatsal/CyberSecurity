@@ -35,7 +35,7 @@ main div {
 }
 
 #images img {
-    max-width: min(86vw, 100%);
+    max-width: min(80vw, 100%);
     margin-top: 30px;
     scroll-margin-top: 100px;
 }
