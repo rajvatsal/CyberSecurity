@@ -7,6 +7,7 @@ body {
     display: grid;
     grid-template: 1fr / 1fr var(--page-width) 1fr;
     margin: 0 0;
+    gap: 40px;
 }
 
 .nav-bar {
@@ -41,6 +42,7 @@ body {
 
 main {
     grid-column: 2 / 3;
+    grid-row: 2 / 3;
     font-family: 'PT Sans', 'Open Sans', Roboto, 'Josefin Sans';
     color: var(--text-color);
     font-size: 1rem;
@@ -60,14 +62,12 @@ main h3 {
     position: relative;
 }
 
-main p{
+main p {
     font-family: 'PT Sans';
     line-height: 24.96px;
 }
 
-main a:link,
-main a:visited,
-main a:active {
+main a {
     text-decoration: underline;
     color: var(--text-color);
 }
@@ -88,7 +88,6 @@ main a:hover {
 section {
     scroll-margin-top: 100px;
 }
-
 
 footer {
     grid-column: 1 / -1;
@@ -122,4 +121,52 @@ footer>section *:not(:link) {
 
 footer>section *:not(:link):hover {
     transform: scale(1.1);
+}
+
+#navigation {
+    grid-column: 3 / 4;
+    position: sticky;
+    margin-top: 95px;
+    top: 100px;
+    height: fit-content;
+}
+
+#navigation ::marker {
+    content: "";
+}
+
+#navigation h2 {
+    font-family: 'Josefin Sans';
+    margin-bottom: 10px;
+}
+
+#navigation ul {
+    display: grid;
+    grid-template: 40px / 1fr;
+    grid-auto-rows: 40px;
+    padding-left: 12px;
+    margin-top: 0;
+    align-items: stretch;
+}
+
+#navigation li {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-left: 1px solid black;
+    align-items: stretch;
+}
+
+#navigation a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'PT Sans';
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+#navigation li:hover {
+    background-color:rgba(0, 156, 104, 0.171);
+    border-left: 3px solid rgb(0, 189, 173);
 }
