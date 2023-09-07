@@ -16,3 +16,7 @@
    width: 18px;
    height: 18px;
 }
+
+main {
+    grid-row: 2 / 3;
+}

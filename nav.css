@@ -42,7 +42,6 @@ body {
 
 main {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
     font-family: 'PT Sans', 'Open Sans', Roboto, 'Josefin Sans';
     color: var(--text-color);
     font-size: 1rem;
