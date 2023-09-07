@@ -1,7 +1,11 @@
 :root {
-    --page-width: min(80ch, 80vw);
-    --text-color: rgb(26, 26, 26);
+    --page-width: min(80ch, 88vw);
+    --text-color: rgb(0, 0, 0);
     --nav-tab-height: 40px;
+    --mdn-nav-heading: 1.2rem;
+    --mdn-nav-links: 0.833rem;
+    --mdn-h2: 2.48rem;
+    --mdn-h3: 1.5rem;
 }
 
 body {
@@ -138,6 +142,7 @@ footer>section *:not(:link):hover {
 #navigation h2 {
     font-family: 'Josefin Sans';
     margin-bottom: 10px;
+    font-size: var(--mdn-nav-heading);
 }
 
 #navigation ul {
@@ -164,9 +169,16 @@ footer>section *:not(:link):hover {
     flex-grow: 1;
     display: flex;
     align-items: center;
+    font-size: var(--mdn-nav-links);
 }
 
 #navigation li:hover {
     background-color:rgba(0, 156, 104, 0.171);
     border-left: 3px solid rgb(0, 189, 173);
+}
+
+@media only screen and (max-width: 1100px){
+    #navigation {
+        display: none;
+    }
 }
