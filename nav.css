@@ -85,6 +85,9 @@ main a:hover {
     display: flex;
 }
 
+section {
+    scroll-margin-top: 100px;
+}
 
 
 footer {
