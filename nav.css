@@ -1,6 +1,7 @@
 :root {
     --page-width: min(80ch, 80vw);
     --text-color: rgb(26, 26, 26);
+    --nav-tab-height: 40px;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 .nav-bar {
     grid-column: 1 / -1;
     display: grid;
-    grid-template: 1fr / repeat(5, 100px);
+    grid-template: 1fr / repeat(6, 100px);
     background-color: rgba(255, 255, 255, 0.10);
     height: 60px;
     position: sticky;
@@ -50,14 +51,14 @@ main {
 main h2 {
     font-size: 3rem;
     font-family: 'Josefin Sans';
-    margin-top: 100px;
+    margin: 100px 0;
     border-bottom: 1px solid black;
 }
 
 main h3 {
     font-size: 1.5rem;
     font-family: 'Josefin Sans';
-    margin: 100px 0 10px;
+    margin: 50px 0 10px;
     position: relative;
 }
 
@@ -141,8 +142,8 @@ footer>section *:not(:link):hover {
 
 #navigation ul {
     display: grid;
-    grid-template: 40px / 1fr;
-    grid-auto-rows: 40px;
+    grid-template: var(--nav-tab-height) / 1fr;
+    grid-auto-rows: var(--nav-tab-height);
     padding-left: 12px;
     margin-top: 0;
     align-items: stretch;
