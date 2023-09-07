@@ -1,0 +1,18 @@
+.nav-bar>a:last-child {
+    border: 2px solid transparent;
+    border-bottom-color: black;
+    color: black !important;
+    transition: background-color 110ms ease-in;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.anchor-link:hover::before {
+   background-image: url('../../images/link.png');
+   content:"";
+   position: absolute;
+   left: -25px;
+   top: -2px;
+   background-size: cover;
+   width: 18px;
+   height: 18px;
+}
