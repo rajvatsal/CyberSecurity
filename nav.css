@@ -186,6 +186,9 @@ footer>section *:not(:link):hover {
     :root body {
         grid-template: 1fr / 300px 1fr;
     }
+    main {
+        padding-right: 10px;
+    }
 }
 
 @media only screen and (max-width: 760px) {
