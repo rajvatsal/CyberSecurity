@@ -1,4 +1,4 @@
-nav-bar>a:first-child {
+.nav-bar>a:first-child {
     border: 2px solid transparent;
     border-bottom-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0) !important;
