@@ -198,6 +198,12 @@ footer>section *:not(:link):hover {
     }
 
     main {
-        padding: 0 40px;
+        padding: 0 15px;
+    }
+    main ol {
+        padding-left: 25px;
+    }
+    a.anchor-link:hover::before {
+        width: 0;
     }
 }
