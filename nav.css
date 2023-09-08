@@ -31,7 +31,7 @@ body {
     position: sticky;
     top: 0;
     backdrop-filter: blur(10px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.295);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.123);
     overflow: auto;
     z-index: 1;
 }
@@ -67,14 +67,16 @@ main h2 {
     border-bottom: 1px solid black;
 }
 
-main h3 {
+main h3,
+body>header h3 {
     font-size: clamp(1.25rem, 2vw, var(--mdn-h3));
     font-family: 'Josefin Sans';
     margin: var(--main-h3);
     position: relative;
 }
 
-main p {
+main p,
+body>header p {
     font-family: 'PT Sans';
     line-height: 24.96px;
 }
