@@ -70,12 +70,16 @@ body {
     gap: 0;
 }
 
+main h2 {
+    margin-top: 140px;
+}
+
 main {
     grid-row: 3/4;
 }
 
 #navigation {
-    margin-left: 40px;
+    margin: 150px 0 0 40px;
     grid-area: 3 / 3 / 4 / 4;
 }
 

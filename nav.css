@@ -130,7 +130,7 @@ footer>section *:not(:link):hover {
 
 #navigation {
     grid-area: 2 / 3 / 3 / 4;
-    margin-top: 95px;
+    margin-top: 105px;
     position: sticky;
     top: 100px;
     height: fit-content;
