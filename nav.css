@@ -20,6 +20,7 @@ body {
     margin: 0 0;
     gap: 40px;
     word-wrap: break-word;
+    text-shadow: 0 0 rgba(0, 0, 0, 0.699);
 }
 
 .nav-bar {
