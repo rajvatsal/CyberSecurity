@@ -21,10 +21,11 @@ main h2 {
 
 main {
     grid-area: 3 / 2 / 4 / 3;
+    margin-right: 40px;
 }
 
 #navigation {
-    margin: 150px 0 0 40px;
+    margin: 150px 0 0;
     grid-area: 3 / 3 / 4 / 4;
 }
 
@@ -35,6 +36,10 @@ main img {
 @media only screen and (max-width: 1200px){
     #navigation {
         grid-area: 3 / 1 / 4 / 2;
-        margin: 150px 10px 0 10px;
+        margin-left: 10px;
+    }
+    main {
+        margin-left: 10px;
+        margin-right: 0;
     }
 }

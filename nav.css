@@ -19,7 +19,7 @@ main p {
 
 body {
     display: grid;
-    grid-template: 1fr / 1fr 2fr 1fr;
+    grid-template: 1fr / 1fr 2.5fr minmax(300px, 1fr);
     margin: 0 0;
     gap: 40px;
     word-wrap: break-word;
