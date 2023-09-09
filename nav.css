@@ -205,6 +205,10 @@ footer>section *:not(:link):hover {
 
     main {
         padding: 0 15px;
+        margin: 0 0 !important;
+    }
+    main * {
+        text-align: left !important;
     }
     main ol {
         padding-left: 25px;
