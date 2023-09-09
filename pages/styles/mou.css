@@ -22,6 +22,11 @@ h2 {
     line-height: 1.03;
 }
 
+main #images {
+    display: flex;
+    flex-direction: column;
+}
+
 .anchor-link:hover::before {
    background-image: url('../../images/link.png');
    content:"";
@@ -37,6 +42,7 @@ h2 {
     max-width: min(80vw, 100%);
     margin-top: 30px;
     scroll-margin-top: 100px;
+    align-self: center;
 }
 #images p {
     margin-top: 0;
