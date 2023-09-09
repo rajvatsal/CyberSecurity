@@ -1,102 +1,78 @@
-
-body * {
-    color: white;
-}
-
 .nav-bar>a:first-child {
     border: 2px solid transparent;
-    border-bottom-color: rgb(255, 255, 255);
-    color: rgb(245, 245, 245) !important;
+    border-bottom-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0) !important;
     background-color: rgba(255, 255, 255, 0.185);
-}
-
-.nav-bar>a{
-    color: white;
 }
 
 body>header {
     grid-column: 1 / -1;
     height: calc(100vh - 60px);
-    padding-left: 20px;
+    display: grid;
+    grid-template: 2fr 90.47px 3fr / 1fr var(--page-width) 1fr;
+    gap: 5px;
 }
 
-body>header>h2 {
-    color: white;
-    font-size: clamp(3.6rem, 15vw, 6rem);
-    margin: 0.5em 0;
-    width: 100%;
-    font-family: 'Phudu';
-}
-.details {
-    color: white;
+marquee.heading {
+    grid-column: 1 / -1;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.589);
     font-family: 'PT Sans';
+    color: black;
+}
+
+div.details {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+div.details * {
+    margin: 0 0;
+}
+
+div.details h3 {
+    margin-top: 5px;
+}
+
+header>img {
+    width: 100%;
+    justify-self: center;
+    grid-area: 3 / 2 / 4 / 3;
 }
 
 body {
     gap: 0;
-    background-image: url('./images/cloud.jpg');
-    background-size: cover;
-}
-
-body main,
-.pad {
-    padding-bottom: 320px;
-    background-color: rgba(0, 0, 0, 0.788);
-}
-
-footer {
-    margin-top: 0;
 }
 
 main h2 {
     margin-top: 140px;
-    border-bottom: 1px solid white;
 }
 
 main {
     grid-row: 3/4;
-    grid-column: 2 / 3;
-    background-color: rgba(0, 0, 0, 0.788);
-    padding: 5px 20px;
-    backdrop-filter: blur(2px);
 }
 
 #navigation {
-    padding: 20px 10px;
-    background-color: transparent;
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-end;
+    margin: 150px 0 0 40px;
+    grid-area: 3 / 3 / 4 / 4;
 }
 
-#navigation a {
-    color: white;
-    flex-grow: 1;
-}
-
-#navigation li {
-    border-left: 1px solid white;
-}
-
-.pad-1 #navigation {
-    display: none;
+main img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1200px){
     #navigation {
-        margin-left: 0px;
-    }
-    .pad-2{
-        display: none;
-    }
-    .pad-1 #navigation {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    .pad-1 {
-        display: none;
+        grid-area: 3 / 1 / 4 / 2;
+        margin-left: 10px;
     }
 }
