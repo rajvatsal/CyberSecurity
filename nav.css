@@ -16,7 +16,7 @@
 
 body {
     display: grid;
-    grid-template: 100px 1fr / 1fr var(--page-width) 1fr;
+    grid-template: 1fr / 1fr var(--page-width) 1fr;
     margin: 0 0;
     gap: 40px;
     word-wrap: break-word;
