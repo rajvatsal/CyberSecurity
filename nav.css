@@ -1,5 +1,4 @@
 :root {
-    --page-width: min(80ch, 88vw);
     --text-color: rgb(0, 0, 0);
     --nav-tab-height: 40px;
     --mdn-nav-heading: 1.2rem;
@@ -20,7 +19,7 @@ main p {
 
 body {
     display: grid;
-    grid-template: 100px 1fr / 1fr var(--page-width) 1fr;
+    grid-template: 100px 1fr / 1fr 2fr 1fr;
     margin: 0 0;
     gap: 40px;
     word-wrap: break-word;
