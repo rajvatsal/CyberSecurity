@@ -6,12 +6,16 @@
     background-color: rgba(0, 0, 0, 0.075);
 }
 
-main {
-    grid-row: 2 / 3;
+:root {
+    --nav-tab-height: 60px;
 }
 
 body {
-    grid-template: 1fr / 1fr 85ch 1fr;
+    grid-template: 1fr / 1fr 9fr minmax(300px, 1.8fr);
+}
+
+main {
+    grid-area: 2 / 2 / 3 / 3;
 }
 
 h2 {
@@ -29,11 +33,6 @@ h2 {
    height: 18px;
 }
 
-main div {
-    display: grid;
-    grid-template: repeat(3, 1fr) / 1fr 1ch;
-}
-
 #images img {
     max-width: min(80vw, 100%);
     margin-top: 30px;
@@ -42,15 +41,4 @@ main div {
 #images p {
     margin-top: 0;
     padding-bottom: 30px;
-}
-
-:root {
-    --nav-tab-height: 60px;
-}
-
-p,
-h2,
-h3,
-footer {
-    max-width: 100vw;
 }
