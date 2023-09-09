@@ -7,8 +7,8 @@
     --aside-h2-margin-bottom: 10px;
     --mdn-h2: 2.48rem;
     --mdn-h3: 1.5rem;
-    --main-h2: 2.0866em 0 1.55em;
-    --main-h3: 1.42em 0 0.42em;
+    --main-h2-margin: 2.0866em 0 1.55em;
+    --main-h3-margin: 1.42em 0 0.42em;
     --background-color: rgba(0, 156, 104, 0.171);
     --border-color: rgba(0, 189, 173);
     --aside-line-height: 19.92px;
@@ -63,7 +63,7 @@ main {
 main h2 {
     font-size: clamp(1.7rem, 3.51vw, 3rem);
     font-family: 'Josefin Sans';
-    margin: var(--main-h2);
+    margin: var(--main-h2-margin);
     border-bottom: 1px solid black;
 }
 
@@ -71,7 +71,7 @@ main h3,
 body>header h3 {
     font-size: clamp(1.25rem, 2vw, var(--mdn-h3));
     font-family: 'Josefin Sans';
-    margin: var(--main-h3);
+    margin: var(--main-h3-margin);
     position: relative;
 }
 
