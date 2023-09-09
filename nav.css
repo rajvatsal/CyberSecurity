@@ -14,6 +14,10 @@
     --aside-line-height: 19.92px;
 }
 
+main p {
+    text-align: justify;
+}
+
 body {
     display: grid;
     grid-template: 100px 1fr / 1fr var(--page-width) 1fr;
