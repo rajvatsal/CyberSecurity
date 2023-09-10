@@ -46,3 +46,15 @@ const animateSlideShow = (() => {
       });
   });
 })();
+
+const carouselShadow = (() => {
+  const _cont = document.querySelector('.carousel-container');
+  const _overlay = _cont.querySelector('.overlay');
+  
+  _cont.addEventListener('mouseover', (e) => {
+    _overlay.classList.add('over');
+  });
+  _cont.addEventListener('mouseleave', (e) => {
+    _overlay.classList.remove('over');
+  });
+})();
