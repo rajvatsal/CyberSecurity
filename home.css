@@ -1,5 +1,5 @@
 :root {
-    --carousel-height: 450px;
+    --carousel-height: 70%;
 }
 
 .nav-bar>a:first-child {
@@ -18,19 +18,16 @@ body>header {                   /*Hero styling*/
 }
 
 .carousel-container {
-    width: 100%;
-    max-width: 800px;
-    height: var(--carousel-height);
+    width: max(95%, 732px);
+    height: max(var(--carousel-height), 400px);
     position: relative;
     overflow: hidden;
-    margin-left: 50px;
     border: 1px solid black;
 }
 
 .carousel-slide {
     width: 100%;
-    max-width: 800px;
-    height: var(--carousel-height);
+    height: 100%;
     position: absolute;
     transition: all 0.5s;
 }
