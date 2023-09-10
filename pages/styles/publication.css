@@ -20,7 +20,3 @@
 main {
     grid-area: 2 / 2 / 3 / 3;
 }
-
-body {
-    grid-template: 1fr / 1fr 2fr minmax(300px, 1fr);
-}

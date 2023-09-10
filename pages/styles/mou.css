@@ -11,7 +11,7 @@
 }
 
 body {
-    grid-template: 1fr / 1fr 9fr minmax(300px, 1.8fr);
+    grid-template: 1fr / 1fr 25fr minmax(300px, 1.8fr);
 }
 
 main {
