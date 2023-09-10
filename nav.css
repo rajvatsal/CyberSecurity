@@ -1,5 +1,7 @@
 /* add list style none */
 :root {
+    scroll-behavior: smooth;
+
     --text-color: rgb(0, 0, 0);
     --nav-tab-height: 40px;
     --mdn-nav-heading: 1.2rem;
