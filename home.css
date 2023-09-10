@@ -1,5 +1,6 @@
 :root {
     --carousel-height: 70%;
+    --carousel-width: 95%;
 }
 
 .nav-bar>a:first-child {
@@ -18,7 +19,7 @@ body>header {                   /*Hero styling*/
 }
 
 .carousel-container {
-    width: max(95%, 732px);
+    width: max(var(--carousel-width), 732px);
     height: max(var(--carousel-height), 400px);
     position: relative;
     overflow: hidden;
