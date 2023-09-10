@@ -28,7 +28,6 @@ body>header {                   /*Hero styling*/
     height: max(var(--carousel-height), 400px);
     position: relative;
     overflow: hidden;
-    border: 1px solid black;
 }
 
 .carousel-slide {
