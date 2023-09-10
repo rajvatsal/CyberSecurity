@@ -12,45 +12,37 @@ const copyMail = (() => {
 })();
 
 const animateSlideShow = (() => {
+  const _slides = document.querySelectorAll('.carousel-slide');
 
-  const _carouselSlide = document.querySelector('.carousel-slide');
-  const _carouselImages = _carouselSlide.querySelectorAll('img');
+  _slides.forEach((_slide, _indx) => {
+    _slide.style.transform = `translateX(${_indx * 100}%)`;
+  })
 
-  //Buttons
-  const _prevBtn = document.querySelector('#prevBtn');
-  const _nextBtn =document.querySelector('#nextBtn');
+  let _curSlide = 0;
+  let _maxSlide = _slides.length - 1;
 
-  //Counter
-  let _counter = 1;
-  const _size = _carouselImages[0].clientWidth;
+  const _nextSlide = document.querySelector('#nextBtn');
+  const _prevSlide = document.querySelector('#prevBtn');
 
-  _carouselSlide.style.transform = 'translateX(' + (-_size * _counter) + 'px)';
+  _nextSlide.addEventListener('click', () => {
+    if(_curSlide === _maxSlide) 
+      _curSlide = 0;
+    else 
+      _curSlide++;
 
-  //Button Listeners
-  _nextBtn.addEventListener('click', () => {
-    if(_counter >= _carouselImages.length - 1) return;
-    _carouselSlide.style.transition = "transform 400ms ease-in-out";
-    _counter++;
-    _carouselSlide.style.transform = 'translateX(' + (-_size * _counter) + 'px)';
+    _slides.forEach((_slide, _indx) => {
+      _slide.style.transform = `translateX(${100 * (_indx - _curSlide)}%)`;
+    });
   });
 
-  _prevBtn.addEventListener('click', () => {
-    if(_counter <= 0) return;
-    _carouselSlide.style.transition = "transform 400ms ease-in-out";
-    _counter--;
-    _carouselSlide.style.transform = 'translateX(' + (-_size * _counter) + 'px)';
-  });
+  _prevSlide.addEventListener('click', () => {
+    if(!_curSlide)
+      _curSlide = _maxSlide;
+    else
+      _curSlide--;
 
-  _carouselSlide.addEventListener('transitionend', () => {
-    if (_carouselImages[_counter].id === 'lastClone') {
-      _carouselSlide.style.transition = "none";
-      _counter = _carouselImages.length - 2;
-      _carouselSlide.style.transform = 'translateX(' + (-_size * _counter) + 'px)';
-    } else if (_carouselImages[_counter].id === 'firstClone') {
-      _carouselSlide.style.transition = "none";
-      _counter = _carouselImages.length - _counter;
-      _carouselSlide.style.transform = 'translateX(' + (-_size * _counter) + 'px)';
-    }
+      _slides.forEach((_slide, _indx) => {
+        _slide.style.transform = `translateX(${100 * (_indx - _curSlide)}%)`;
+      });
   });
-  
 })();

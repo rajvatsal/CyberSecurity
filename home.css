@@ -1,3 +1,7 @@
+:root {
+    --carousel-height: 450px;
+}
+
 .nav-bar>a:first-child {
     border: 2px solid transparent;
     border-bottom-color: rgb(0, 0, 0);
@@ -9,60 +13,57 @@ body>header {                   /*Hero styling*/
     grid-area: 2 / 1 / 3 / -1;
     height: calc(100vh - 60px);
     display: grid;
-    grid-template: 1fr / repeat(2, 1fr);
+    grid-template: 1fr / 4fr 3fr;
     place-items: center;
 }
 
 .carousel-container {
-    display: flex;
+    width: 100%;
+    max-width: 800px;
+    height: var(--carousel-height);
+    position: relative;
     overflow: hidden;
-    height: 450px;
-    width: 655px;
-    margin-left: 20px;
+    margin-left: 50px;
+    border: 1px solid black;
 }
 
 .carousel-slide {
-    display: flex;
     width: 100%;
-    height: 100%;
     max-width: 800px;
+    height: var(--carousel-height);
+    position: absolute;
+    transition: all 0.5s;
 }
+
 .carousel-slide>img {
     width: 100%;
     height: 100%;
-    margin: auto;
+    object-fit: cover;
     user-select: none;
 }
 
-.carousel-container {
-    position: relative;
-}
-
 #prevBtn {
-    left: 0%;
+    left: 0;
 }
 
 #nextBtn {
-    right: 0%;
+    right: 0;
 }
 
-#prevBtn,
-#nextBtn {
+.btn {
     position: absolute;
     top: 50%;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.692);
-}
-
-#prevBtn:hover,
-#nextBtn:hover {
-    cursor: pointer;
-}
-
-#prevBtn:active,
-#nextBtn:active {
     background-color: black;
+}
+
+.btn:active {
     transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 body {
