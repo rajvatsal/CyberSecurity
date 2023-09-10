@@ -19,6 +19,7 @@ body>header {                   /*Hero styling*/
     height: calc(100vh - 60px);
     display: grid;
     grid-template: 1fr / 4fr 3fr;
+    gap: 10px;
     place-items: center;
 }
 
@@ -66,6 +67,24 @@ body>header {                   /*Hero styling*/
 
 .btn:hover {
     cursor: pointer;
+}
+
+.notifications {
+    margin: 0 10px 0 0;
+    height: max(var(--carousel-height), 400px);
+}
+
+.notifications__heading {
+    font-family: 'Josefin Sans';
+    font-size: var(--mdn-h3);
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.notifications__list {
+    margin: 0;
+    font-family: 'PT Sans';
+    text-align: justify;
 }
 
 main h2 {
