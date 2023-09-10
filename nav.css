@@ -1,3 +1,4 @@
+/* add list style none */
 :root {
     --text-color: rgb(0, 0, 0);
     --nav-tab-height: 40px;
@@ -11,6 +12,10 @@
     --background-color: rgba(0, 156, 104, 0.171);
     --border-color: rgba(0, 189, 173);
     --aside-line-height: 19.92px;
+}
+
+body * {
+    box-sizing: border-box;
 }
 
 main p {
