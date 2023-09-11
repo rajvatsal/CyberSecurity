@@ -1,9 +1,5 @@
-.nav-bar>a:nth-last-child(1) {
-    border: 2px solid transparent;
-    border-bottom-color: black;
-    color: black !important;
-    transition: background-color 110ms ease-in;
-    background-color: rgba(0, 0, 0, 0.075);
+.nav-bar__links>a:nth-last-child(1) {
+    color: rgb(0, 0, 0);
 }
 
 :root {
