@@ -3,8 +3,11 @@
     --carousel-width: 95%;
 }
 
-.nav-bar__links>a:first-child {
-    color: rgb(0, 0, 0);
+.nav-bar>a:nth-child(2) {
+    border: 2px solid transparent;
+    border-bottom-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0.075);
 }
 
 body {

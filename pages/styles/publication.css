@@ -1,5 +1,9 @@
-.nav-bar__links>a:nth-last-child(2) {
-    color: rgb(0, 0, 0);
+.nav-bar>a:nth-last-child(2) {
+    border: 2px solid transparent;
+    border-bottom-color: black;
+    color: black !important;
+    transition: background-color 110ms ease-in;
+    background-color: rgba(0, 0, 0, 0.075);
 }
 
 .anchor-link:hover::before {
