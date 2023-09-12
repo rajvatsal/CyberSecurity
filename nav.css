@@ -34,12 +34,10 @@ body {
 .nav-bar {
     grid-area: 1 / 1 / 2 / -1;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.877);
-    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255);
+    position: relative;
     height: 60px;
-    position: sticky;
     top: 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.082);
     overflow-x: auto;
     overflow-y: hidden;
     z-index: 11;
@@ -47,14 +45,15 @@ body {
 
 .nav-bar__logo {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
     max-height:60px;
+    margin: 0 0 0 5px;
 }
 
 .nav-bar__logo>img {
-    height:60px;
-    width: 100px;
+    height:50px;
 }
 
 .nav-bar__links {
