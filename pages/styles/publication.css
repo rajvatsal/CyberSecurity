@@ -20,3 +20,7 @@
 main {
     grid-area: 2 / 2 / 3 / 3;
 }
+
+main p{
+    margin-bottom: 0;
+}
