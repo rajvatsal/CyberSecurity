@@ -1,0 +1,75 @@
+
+.nav-bar>a:nth-child(3) {
+    border: 2px solid transparent;
+    border-bottom-color: black;
+    color: black !important;
+    transition: background-color 110ms ease-in;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.mentor__right-column>h2 {
+    font-family: 'Josefin Sans', Arial, sans-serif, Helvetica, 'Robot Sans';
+    font-size: 1.53rem;
+    margin-top: 20px;
+    border: 0;
+}
+
+.mentor__right-column>h3 {
+    font-family: 'Josefin Sans', Arial, sans-serif, Helvetica, 'Robot Sans';
+    font-size: 1.12rem;
+}
+
+.mentor__right-column>p {
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    max-width: 75ch;
+}
+
+.mentor__left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mentor__left-column>img {
+    max-width: 130px;
+}
+
+.mentor__left-column>a:hover {
+    transform: scale(1.1);
+    border: 0;
+}
+
+.mentor__left-column>ul {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 0 20px;
+}
+
+.mentor__left-column li {
+    padding-right: 15px;
+    color: rgb(59, 59, 59);
+    font-size: 0.89rem;
+}
+
+.mentor__google-scholar {
+    background-image: url('../../images/google-scholar-dark.svg');
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    background-size: cover;
+}
+
+#mentor {
+    display: grid;
+    gap: 10px;
+    max-width: 80vw;
+    margin: 50px auto 0 0;
+    grid-template: 1fr / 1fr 1fr;
+}
