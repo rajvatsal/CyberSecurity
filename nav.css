@@ -36,7 +36,7 @@ body {
     display: grid;
     grid-template: 1fr / repeat(6, 100px);
     grid-auto-columns: 1fr;
-    background-color: rgb(255, 255, 255);
+    background-color: #0F37BE;
     height: 60px;
     top: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.082);
@@ -67,12 +67,12 @@ body {
     box-sizing: border-box;
     padding: 2px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(216, 216, 216);
     font-family: 'Phudu', 'Roboto Condensed', Helvetica, sans-serif;
 }
 
 .nav-bar>a:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: #00000065;
     color: rgb(255, 255, 255);
 }
 
