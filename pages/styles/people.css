@@ -13,8 +13,23 @@ body {
     gap: 0;
 }
 
+#mentor {
+    display: flex;
+    gap: 10px;
+    margin-top: 60px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #mentor {
+        justify-content: center;
+    }
+}
+
 .mentor__right-column {
-    grid-column: 3 / 4;
+    flex: 0 1 auto;
 }
 
 .mentor__right-column>h2,
@@ -41,7 +56,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-column: 2 / 3;
+    flex: 0 1 500px;
 }
 
 .mentor__left-column>img,
@@ -74,13 +89,6 @@ section h2 {
     aspect-ratio: 1 / 1;
     width: 50px;
     background-size: cover;
-}
-
-#mentor {
-    display: grid;
-    gap: 10px;
-    grid-template: 1fr / 0fr 6fr 6fr 4fr;
-    margin-top: 60px;
 }
 
 .team {
