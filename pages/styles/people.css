@@ -85,8 +85,10 @@ section h2 {
 
 .team {
     display: grid;
-    grid-template: 1fr / repeat(3, 1fr);
-    gap: 70px;
+    grid-template: 1fr / repeat(auto-fit, minmax(200px, 1fr));
+    gap: 90px;
+    row-gap: 100px;
+    column-gap: 160px;
 }
 
 h2 {
@@ -146,4 +148,14 @@ h2 {
 
 section:not(#mentor) {
     margin: 100px 50px 0;
+}
+
+@media only screen and (max-width: 450px) {
+    section:not(#mentor) {
+        margin: 200px 0;
+    }
+    
+    section h2 {
+        font-size: 1.3rem;
+    }
 }
