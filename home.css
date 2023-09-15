@@ -3,7 +3,7 @@
     --carousel-width: 95%;
 }
 
-.nav-bar>a:nth-child(2) {
+.nav-bar>a:nth-child(1) {
     border: 2px solid transparent;
     border-bottom-color: rgb(243, 243, 243);
     color: rgb(216, 216, 216) !important;
