@@ -31,6 +31,8 @@ body {
 .mentor__right-column>p {
     font-family: 'PT Sans', Helvetica, sans-serif;
     max-width: 75ch;
+    font-size: 0.89rem;
+    line-height: 21.36px;
 }
 
 .mentor__left-column {
