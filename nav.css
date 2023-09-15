@@ -38,13 +38,18 @@ body {
     grid-auto-columns: 1fr;
     background-color: #0F37BE;
     height: 60px;
-    top: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.082);
     overflow-x: auto;
     overflow-y: hidden;
     z-index: 11;
     position: sticky;
+    top: -60px;
     justify-content: flex-end;
+    transition: all 200ms ease-in;
+}
+
+.nav-bar.up {
+    top: 0;
 }
 
 .nav-bar__logo {

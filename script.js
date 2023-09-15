@@ -11,6 +11,23 @@ const copyMail = (() => {
   _mail.addEventListener('click', _copyContent);
 })();
 
+
+const hideNavbar = (() => {
+  const _navBar = document.querySelector('.nav-bar');
+  let _lastScroll = window.scrollY;
+
+  console.log(_lastScroll);
+
+  window.addEventListener('scroll', () => {
+    if(_lastScroll > window.scrollY) 
+      _navBar.classList.add('up');
+    else
+      _navBar.classList.remove('up');
+
+    _lastScroll = window.scrollY;
+  });
+})();
+
 const animateSlideShow = (() => {
 
   const automateSlideShow = () => setInterval(_changeSlideImage, 3000);
