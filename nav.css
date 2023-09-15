@@ -159,8 +159,8 @@ footer>section *:not(:link):hover {
     height: fit-content;
 }
 
-#navigation li::marker {
-    content: "";
+#navigation li {
+    list-style: none;
 }
 
 #navigation h2 {

@@ -16,7 +16,8 @@ body {
     grid-column: 3 / 4;
 }
 
-.mentor__right-column>h2 {
+.mentor__right-column>h2,
+section h2 {
     font-family: 'Josefin Sans', Arial, sans-serif, Helvetica, 'Robot Sans';
     font-size: 1.53rem;
     margin-top: 20px;
@@ -42,8 +43,9 @@ body {
     grid-column: 2 / 3;
 }
 
-.mentor__left-column>img {
-    max-width: 130px;
+.mentor__left-column>img,
+.profile img:first-child {
+    width: 130px;
 }
 
 .mentor__left-column>a:hover {
@@ -78,4 +80,69 @@ body {
     gap: 10px;
     grid-template: 1fr / 0fr 6fr 6fr 4fr;
     margin-top: 60px;
+}
+
+.team {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 70px;
+}
+
+h2 {
+    text-align: center;
+    display: flex;
+    align-items:center;
+    font-size: 1.3rem;
+}
+
+ h2::before,
+ h2::after {
+    content: '';
+    flex-grow: 1;
+    background-color: black;
+    height: 1px;
+    display: inline-block;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile :last-child {
+    justify-self: flex-end;
+    width: 40px;
+    flex: 1 0 auto;
+}
+
+.profile p {
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profile .name {
+    font-weight: bold;
+}
+
+.profile :not(.name):not(img) {
+    font-size: 0.89rem;
+    color: rgb(46, 46, 46);
+}
+
+.profile img:first-child {
+    width: 100px;
+}
+
+.profile .email {
+    width: 25px;
+}
+
+.profile .research {
+    margin-top: 0;
+}
+
+section:not(#mentor) {
+    margin: 100px 50px 0;
 }
