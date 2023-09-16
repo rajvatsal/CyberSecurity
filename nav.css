@@ -45,7 +45,7 @@ body {
     position: sticky;
     top: -60px;
     justify-content: flex-end;
-    transition: all 200ms ease-in;
+    transition: all 100ms ease-in;
 }
 
 .nav-bar.up {
