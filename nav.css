@@ -44,9 +44,10 @@ body {
 .nav-bar {
     grid-area: 1 / 1 / 2 / -1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 20px;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     background-color: #0F37BE;
     height: 60px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.082);
