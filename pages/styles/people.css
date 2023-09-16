@@ -1,12 +1,3 @@
-
-.nav-bar>a:nth-child(3) {
-    border: 2px solid transparent;
-    border-bottom-color: rgb(255, 255, 255);
-    color: rgb(216, 216, 216) !important;
-    transition: background-color 110ms ease-in;
-    background-color: rgba(128, 128, 128, 0.075);
-}
-
 body {
     display: flex;
     flex-direction: column;
