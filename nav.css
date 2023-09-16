@@ -47,7 +47,7 @@ body {
     justify-content: flex-end;
     padding-right: 20px;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     background-color: #0F37BE;
     height: 60px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.082);
@@ -67,7 +67,7 @@ body {
     text-decoration: none;
     color: rgb(148 163 185);
     font-family: 'Urbanist', 'Roboto Condensed', Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     position: relative;
     transition: color 250ms ease-in-out;
 }
