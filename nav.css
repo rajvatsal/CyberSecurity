@@ -217,6 +217,14 @@ footer>section *:not(:link):hover {
     main {
         padding-right: 10px;
     }
+
+    .carousel-container {
+        display: none;
+    }
+
+    body>header {
+        grid-template: 1fr / 1fr !important;
+    }
 }
 
 @media only screen and (max-width: 760px) {
@@ -240,5 +248,9 @@ footer>section *:not(:link):hover {
     }
     a.anchor-link:hover::before {
         width: 0;
+    }
+
+    header li{
+        text-align: left !important;
     }
 }
