@@ -277,7 +277,7 @@ footer>section *:not(:link):hover {
 
     .nav-bar__primary-navigation {
         position: fixed;
-        inset: -30px 0 0 30%;
+        inset: -60px 0 0 30%;
         background-color: rgba(1, 25, 71, 0.95);
         flex-direction: column;
         justify-content: start;
