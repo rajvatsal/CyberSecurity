@@ -285,12 +285,11 @@ footer>section *:not(:link):hover {
         padding: min(15vh, 6rem) 0 0 2rem;
         transform: translateX(100%);
         transition: transform 250ms ease-out;
-        height: calc(100vh + 60px);
+        height: 100vh;
     }
 
     .nav-bar__primary-navigation[data-visible="true"] {
         transform: translateX(0%);
-        height: 100vh;
     }
 
     @supports not (-moz-appearance: none) {
