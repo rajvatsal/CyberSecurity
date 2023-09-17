@@ -312,7 +312,7 @@ footer>section *:not(:link):hover {
     }
 
     .mobile-nav-toggle[aria-expanded='true'] {
-        background-image: url('./images/cross-white.png');
+        background-image: url('./images/cross-white.svg');
     }
 
     .nav-bar {
