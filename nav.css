@@ -22,7 +22,7 @@ body * {
     box-sizing: border-box;
 }
 
-.nav-bar>a.current-page {
+.nav-bar a.current-page {
     color: white !important;
     text-shadow: 0 0 black;
     transition: background-color 100ms ease-in;
@@ -43,11 +43,7 @@ body {
 
 .nav-bar {
     grid-area: 1 / 1 / 2 / -1;
-    display: flex;
-    justify-content: flex-end;
     padding-right: 20px;
-    align-items: center;
-    gap: 20px;
     background-color: #0F37BE;
     height: 60px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.082);
@@ -62,7 +58,18 @@ body {
     top: 0;
 }
 
-.nav-bar>a {
+.nav-bar__primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.nav-bar a {
     box-sizing: border-box;
     text-decoration: none;
     color: rgb(148 163 185);
@@ -72,7 +79,7 @@ body {
     transition: color 250ms ease-in-out;
 }
 
-.nav-bar>a::after {
+.nav-bar__primary-navigation a::after {
     content: '';
     position: absolute;
     bottom: -1.0px;
@@ -85,13 +92,13 @@ body {
     transition: transform 250ms ease-in;
 }
 
-.nav-bar>a:hover {
+.nav-bar__primary-navigation a:hover {
     color: white;
 }
 
-.nav-bar>a:hover::after {
+.nav-bar__primary-navigation a:hover::after {
     color: rgb(255, 255, 255);
-    transform: scaleX(1.02);
+    transform: scaleX(1);
     transform-origin: left;
 }
 
@@ -263,7 +270,7 @@ footer>section *:not(:link):hover {
         display: block !important;
     }
 
-    .nav-bar {
+    .nav-bar__primary-navigation {
         justify-content: left !important;
         padding: 0 20px;
     }
