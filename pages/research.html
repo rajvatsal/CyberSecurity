@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
+    <title>Academic Research</title>
     <link href="../nav.css" rel="stylesheet" />
 
     <script src="../script.js" defer></script>
@@ -12,12 +12,30 @@
 
 <body>
     <nav class="nav-bar">
-        <a href="../index.html">Home</a>
-        <a href="project.html">Sponsored Projects</a>
-        <a href="people.html">People</a>
-        <a href="research.html" class="current-page">Academic Research</a>
-        <a href="datasets.html">Publications </a>
-        <a href="mou.html">MoU</a>
+        <ul id="primary-navigation" class="nav-bar__primary-navigation" data-visible="false">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="project.html">Sponsored Projects</a>
+            </li>
+            <li>
+                <a href="people.html">People</a>
+            </li>
+            <li>
+                <a href="research.html" class="current-page">Academic Research</a>
+            </li>
+            <li>
+                <a href="datasets.html">Publications </a>
+            </li>
+            <li>
+                <a href="mou.html">MoU</a>
+            </li>
+        </ul>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+
+        <span class="nav-bar__logo"><img src="../images/logo.png" alt="" /></span>
     </nav>
     <header></header>
 

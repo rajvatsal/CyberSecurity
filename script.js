@@ -1,17 +1,3 @@
-
-const copyMail = (() => {
-  const _copyContent = () => {
-        navigator.clipboard.writeText(_text);
-        alert("copied email to clipboard");
-       console.log('Content copied to clipboard');
-  }
-
-  let _text = "dr.preetimishra@doonuniversity.ac.in";
-  let _mail = document.querySelector('.email');
-  _mail.addEventListener('click', _copyContent);
-})();
-
-
 const hideNavbar = (() => {
   const _navBar = document.querySelector('.nav-bar');
   let _lastScroll = window.scrollY;
@@ -27,6 +13,36 @@ const hideNavbar = (() => {
     _lastScroll = window.scrollY;
   });
 })();
+
+const setMobileNav = (() => {
+  const primaryNav = document.querySelector('.nav-bar__primary-navigation');
+  const navToggle = document.querySelector('.mobile-nav-toggle');
+
+  navToggle.addEventListener('click', () => {
+    const visibility = primaryNav.getAttribute('data-visible');
+
+    if(visibility === "false") {
+      primaryNav.setAttribute('data-visible', true);
+      navToggle.setAttribute('aria-expanded', true);
+    } else {
+      primaryNav.setAttribute('data-visible', false);
+      navToggle.setAttribute('aria-expanded', false);
+    }
+  });
+})();
+
+const copyMail = (() => {
+  const _copyContent = () => {
+        navigator.clipboard.writeText(_text);
+        alert("copied email to clipboard");
+       console.log('Content copied to clipboard');
+  }
+
+  let _text = "dr.preetimishra@doonuniversity.ac.in";
+  let _mail = document.querySelector('.email');
+  _mail.addEventListener('click', _copyContent);
+})();
+
 
 const animateSlideShow = (() => {
 
@@ -71,7 +87,6 @@ const animateSlideShow = (() => {
 
   return{automateSlideShow, intervalID};
 })();
-
 
 const addCarouselShadow = (() => {
   const _cont = document.querySelector('.carousel-container');
