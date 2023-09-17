@@ -278,7 +278,7 @@ footer>section *:not(:link):hover {
     .nav-bar__primary-navigation {
         position: fixed;
         inset: 0 0 0 30%;
-        background-color: rgb(0 31 90);
+        background-color: rgba(1, 25, 71, 0.95);
         flex-direction: column;
         justify-content: start;
         align-items: start;
@@ -292,10 +292,9 @@ footer>section *:not(:link):hover {
         transform: translateX(0%);
     }
 
-    @supports (backdrop-filter: blur(1rem)) {
+    @supports not (-moz-appearance: none) {
         .nav-bar__primary-navigation {
             backdrop-filter: blur(1rem);
-            background-color: rgba(1, 25, 71, 0.95);
         }
     }
 
