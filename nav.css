@@ -53,6 +53,10 @@ body {
     position: sticky;
     top: -60px;
     transition: all 100ms ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .nav-bar.up {
@@ -122,6 +126,16 @@ body {
 
 .nav-bar__logo>img {
     height:80px;
+}
+
+.nav-bar__banner-text {
+    /* font-size: 1.3rem; */
+    font-size: max(1.5vw, 0.80rem);
+    font-family: 'Urbanist', Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+    padding-left: 90px;
+    max-width: 90%;
 }
 
 main {
