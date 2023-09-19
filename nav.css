@@ -136,6 +136,7 @@ body {
     color: white;
     padding-left: 90px;
     max-width: 90%;
+    text-align: left;
 }
 
 main {
@@ -281,14 +282,8 @@ footer>section *:not(:link):hover {
     }
 }
 
-@media only screen and (max-width: 760px) {
-    #navigation {
-        display: none;
-    }
+@media only screen and (max-width: 1070px) {
 
-    body {
-        display: block !important;
-    }
 
     .nav-bar__primary-navigation {
         position: fixed;
@@ -324,7 +319,7 @@ footer>section *:not(:link):hover {
         background-image: url('./images/ham-white.svg');
         background-color: transparent;
         border: 0;
-        right: 2rem;
+        right: 1rem;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -335,6 +330,16 @@ footer>section *:not(:link):hover {
 
     .nav-bar {
         top: 0;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #navigation {
+        display: none;
+    }
+
+    body {
+        display: block !important;
     }
 
     main {
