@@ -5,23 +5,27 @@ body {
 }
 
 #mentor {
-    display: flex;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-auto-columns: 1.5fr;
+    grid-auto-flow: row;
     gap: 10px;
     margin-top: 60px;
     justify-content: flex-start;
-    flex-wrap: wrap;
     min-height: calc(100vh - 60px);
+}
 
+@media only screen and (min-width: 1070px) {
+    #mentor {
+        grid-auto-flow: column;
+        padding-right: 70px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
     #mentor {
         justify-content: center;
     }
-}
-
-.mentor__right-column {
-    flex: 0 1 auto;
 }
 
 .mentor__right-column>h2,
@@ -39,7 +43,6 @@ section h2 {
 
 .mentor__right-column>p {
     font-family: 'PT Sans', Helvetica, sans-serif;
-    max-width: 75ch;
     font-size: 0.89rem;
     line-height: 21.36px;
 }
@@ -48,7 +51,6 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 1 500px;
 }
 
 .mentor__left-column>img,
@@ -74,6 +76,7 @@ section h2 {
     padding-right: 15px;
     color: rgb(59, 59, 59);
     font-size: 0.89rem;
+    text-align: center !important;
 }
 
 .mentor__google-scholar {
