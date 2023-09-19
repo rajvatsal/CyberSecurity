@@ -130,7 +130,7 @@ body {
 
 .nav-bar__banner-text {
     /* font-size: 1.3rem; */
-    font-size: max(1.5vw, 0.80rem);
+    font-size: clamp(0.80rem, 1.5vw, 1.05rem);
     font-family: 'Urbanist', Helvetica, sans-serif;
     margin: 0;
     color: white;
