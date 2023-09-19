@@ -145,7 +145,8 @@ h2 {
     width: 25px;
 }
 
-.profile .research {
+.profile .research,
+.profile .internship-duration {
     margin-top: 0;
 }
 
