@@ -81,6 +81,10 @@ body>header {                   /*Hero styling*/
     text-align: center;
 }
 
+.notifications__list li {
+    margin-top: 50px;
+}
+
 .notifications__list {
     margin: 0;
     font-family: 'PT Sans';
