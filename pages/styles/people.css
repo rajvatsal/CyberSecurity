@@ -58,6 +58,10 @@ section h2 {
     width: 130px;
 }
 
+.mentor__left-column>img {
+    margin-top: 50px;
+}
+
 .mentor__left-column>a:hover {
     transform: scale(1.1);
     border: 0;
