@@ -123,12 +123,6 @@ h2 {
     align-items: center;
 }
 
-.profile :last-child {
-    justify-self: flex-end;
-    width: 40px;
-    flex: 1 0 auto;
-}
-
 .profile p {
     margin-bottom: 0;
     margin-top: 10px;
