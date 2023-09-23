@@ -187,16 +187,24 @@ main h3 {
     position: relative;
 }
 
-main p {
+main p,
+footer p {
     font-family: 'PT Sans';
     line-height: 24.96px;
 }
 
-main a {
+main a,
+footer a {
     text-decoration: underline;
     color: var(--text-color);
 }
-main a:hover {
+
+footer a {
+    color: white;
+}
+
+main a:hover,
+footer p a:hover {
     text-decoration: none;
     border-bottom: 2px solid rgb(245, 98, 0);
 }
@@ -219,9 +227,10 @@ footer {
     grid-column: 1 / -1;
     color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
     background-color: #130f40;
     background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
     margin-top: 320px;
@@ -229,17 +238,24 @@ footer {
     min-height: 150px;
 }
 
-footer>h2 {
+footer section>h2 {
     font-family: 'Phudu';
     font-size: 2rem;
+    text-align: center;
 }
 
-footer>section *:not(:link) {
+.attributions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img {
     width: 50px;
     transition: all 100ms ease-in-out;
 }
 
-footer>section *:not(:link):hover {
+footer>.contact img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
