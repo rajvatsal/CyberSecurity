@@ -308,6 +308,16 @@ footer>.contact img:hover {
 }
 
 @media only screen and (max-width: 1200px){
+
+    header {
+        height: fit-content !important;
+    }
+
+    .carousel-container {
+        width: 100% !important;
+        height: max(250px, 56vw) !important;
+    }
+
     #navigation {
         grid-area: 2 / 1 / 4 / 2;
         margin-left: 10px;
@@ -319,17 +329,12 @@ footer>.contact img:hover {
         padding-right: 10px;
     }
 
-    .carousel-container {
-        display: none;
-    }
-
     body>header {
-        grid-template: 1fr / 1fr !important;
+        grid-template: 1fr 1fr / 1fr !important;
     }
 }
 
 @media only screen and (max-width: 1070px) {
-
 
     .nav-bar__primary-navigation {
         position: fixed;
