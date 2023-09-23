@@ -111,6 +111,19 @@ main img {
 }
 
 @media only screen and (max-width: 1200px){
+
+    body>header {
+        height: fit-content;
+        place-items: start;
+        gap: 90px;
+        grid-template: 1fr / 1fr !important;
+    }
+
+    .carousel-container {
+        width: 100% !important;
+        height: max(250px, 56vw) !important;
+    }
+
     #navigation {
         grid-area: 3 / 1 / 4 / 2;
         margin-left: 10px;
