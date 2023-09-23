@@ -1,0 +1,144 @@
+:root {
+    --carousel-height: 70%;
+    --carousel-width: 95%;
+}
+
+body {
+    gap: 0;
+}
+
+body>header {                   /*Hero styling*/
+    grid-area: 2 / 1 / 3 / -1;
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template: 1fr / 4fr 3fr;
+    gap: 10px;
+    place-items: center;
+}
+
+.carousel-container {
+    width: max(var(--carousel-width), 732px);
+    height: max(var(--carousel-height), 400px);
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.carousel-slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 29%), transparent, rgba(0, 0, 0, 29%));
+}
+
+.overlay.over {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.582), transparent, rgba(0, 0, 0, 0.589));
+}
+
+.notifications {
+    margin: 0 10px 0 0;
+    height: max(var(--carousel-height), 400px);
+    max-height: 100vh;
+}
+
+.notifications__heading {
+    font-family: 'Josefin Sans';
+    font-size: var(--mdn-h3);
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.notifications__list li {
+    margin-top: 50px;
+}
+
+.notifications__list {
+    margin: 0;
+    font-family: 'PT Sans';
+    text-align: justify;
+}
+
+main h2 {
+    margin-top: 140px;
+}
+
+main {
+    grid-area: 3 / 2 / 4 / 3;
+    margin: 0 40px;
+}
+
+#navigation {
+    margin: 150px 0 0;
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+main img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+
+    body>header {
+        height: fit-content;
+        place-items: start;
+        gap: 90px;
+        grid-template: 1fr / 1fr !important;
+    }
+
+    .carousel-container {
+        width: 100% !important;
+        height: max(250px, 56vw) !important;
+    }
+
+    #navigation {
+        grid-area: 3 / 1 / 4 / 2;
+        margin-left: 10px;
+    }
+    main {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+}
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+}
+
+marquee {
+    flex: 1 1 auto;
+}
