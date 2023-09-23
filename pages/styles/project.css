@@ -1,0 +1,14 @@
+.anchor-link:hover::before {
+   background-image: url('../../images/link.png');
+   content:"";
+   position: absolute;
+   left: -25px;
+   top: -2px;
+   background-size: cover;
+   width: 18px;
+   height: 18px;
+}
+
+main {
+    grid-row: 2 / 3;
+}
