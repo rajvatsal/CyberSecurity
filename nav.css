@@ -248,6 +248,7 @@ footer section>h2 {
     font-family: 'Phudu';
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .attributions {
@@ -426,5 +427,12 @@ footer>.contact img:hover {
 
     header li {
         text-align: left !important;
+    }
+
+    footer img {
+        width: 40px;
+    }
+    footer section>h2 {
+        font-size: 1.5rem;
     }
 }
