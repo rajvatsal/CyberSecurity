@@ -317,17 +317,17 @@ footer>.contact img:hover {
 @media only screen and (max-width: 1200px){
 
     #navigation {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 3 / 2 !important;
         margin-left: 10px;
     }
 
     .content {
-        grid-column: 2 / 3 !important;
+        grid-area: 2 / 2 / -1 / 3 !important;
         padding-right: 15px;
     }
 
     main {
-        grid-template: 1fr / 220px 1fr;
+        grid-template: 1fr / 260px 1fr;
         column-gap: 20px!important;
         padding: 0;
     }
@@ -338,6 +338,10 @@ footer>.contact img:hover {
 
     #navigation ul {
         padding-left: 0;
+    }
+
+    #navigation li {
+        padding: 10px 5px;
     }
 
 }
@@ -394,7 +398,7 @@ footer>.contact img:hover {
     }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 860px) {
     #navigation {
         display: none;
     }
