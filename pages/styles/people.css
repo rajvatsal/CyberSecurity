@@ -1,4 +1,4 @@
-body {
+main {
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 @media only screen and (max-width: 1300px) {
-    main {
+    .content {
         padding: 0 15px;
     }
 }
@@ -29,7 +29,7 @@ body {
     flex: 1.5 1.5 auto;
 }
 
-.mentor__right-column>h2,
+#mentor .mentor__right-column>h2,
 section h2 {
     font-family: 'Josefin Sans', Arial, sans-serif, Helvetica, 'Robot Sans';
     font-size: 1.53rem;

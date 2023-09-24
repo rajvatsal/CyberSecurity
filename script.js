@@ -1,5 +1,5 @@
 const hideNavbar = (() => {
-  const _navBar = document.querySelector('.nav-bar');
+  const _navBar = document.querySelector('header');
   let _lastScroll = window.scrollY;
 
   console.log(_lastScroll);
