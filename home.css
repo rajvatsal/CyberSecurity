@@ -134,7 +134,8 @@ marquee {
 }
 
 .marquee ul {
-    animation: marquee 8s linear infinite;
+    height: fit-content;
+    animation: marquee 10s linear infinite;
 }
 
 .marquee {
@@ -148,7 +149,7 @@ marquee {
     }
 
     100% {
-        transform: translateY(-120%);
+        transform: translateY(-110%);
     }
 }
 
