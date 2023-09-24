@@ -1,4 +1,4 @@
-body {
+main {
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -16,6 +16,9 @@ body {
     main {
         padding: 0 15px;
     }
+    section:not(#mentor):not(footer>section) {
+        margin: 100px 0 0 !important;
+}
 }
 
 @media only screen and (min-width: 1300px) {
@@ -25,11 +28,17 @@ body {
     }
 }
 
+@media only screen and (max-width: 760px) {
+    main {
+        padding: 0 15px;
+    }
+}
+
 .mentor__right-column {
     flex: 1.5 1.5 auto;
 }
 
-.mentor__right-column>h2,
+#mentor .mentor__right-column>h2,
 section h2 {
     font-family: 'Josefin Sans', Arial, sans-serif, Helvetica, 'Robot Sans';
     font-size: 1.53rem;
@@ -160,7 +169,7 @@ section:not(#mentor):not(footer>section) {
         margin: 200px 0;
     }
     
-    section h2 {
-        font-size: 1.3rem !important;
+    section h2:not(footer h2) {
+        font-size: 1.2rem !important;
     }
 }
