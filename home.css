@@ -17,7 +17,7 @@ body {
 }
 
 .carousel-container {
-    width: max(var(--carousel-width), 732px);
+    width: max(var(--carousel-width), 660px);
     height: max(var(--carousel-height), 400px);
     position: relative;
     overflow: hidden;
