@@ -140,3 +140,21 @@ main img {
 marquee {
     flex: 1 1 auto;
 }
+
+.marquee ul {
+    animation: marquee 5s linear infinite;
+}
+
+.marquee {
+    overflow: hidden;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-200%);
+    }
+}
