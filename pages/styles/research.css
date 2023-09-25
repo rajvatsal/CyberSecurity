@@ -8,3 +8,7 @@
    width: 18px;
    height: 18px;
 }
+
+.content p:last-child:not(#project-5 p:last-child) {
+    text-align: left;
+}
