@@ -46,7 +46,7 @@ const copyMail = (() => {
 
 const animateSlideShow = (() => {
 
-  const automateSlideShow = () => setInterval(_changeSlideImage, 3000);
+  const automateSlideShow = () => setInterval(_changeSlideImage, 2000);
 
   const _changeSlideImage = function() {
     if(_curSlide === _maxSlide) 
@@ -74,18 +74,18 @@ const animateSlideShow = (() => {
   _nextSlide.addEventListener('click', _changeSlideImage);
 
   _prevSlide.addEventListener('click', () => {
-    if(!_curSlide)
+    if (!_curSlide)
       _curSlide = _maxSlide;
     else
       _curSlide--;
 
-      _slides.forEach((_slide, _indx) => {
-        _slide.style.transform = `translateX(${100 * (_indx - _curSlide)}%)`;
-      });
+    _slides.forEach((_slide, _indx) => {
+      _slide.style.transform = `translateX(${100 * (_indx - _curSlide)}%)`;
+    });
   });
   let intervalID = automateSlideShow();
 
-  return{automateSlideShow, intervalID};
+  return { automateSlideShow, intervalID };
 })();
 
 const addCarouselShadow = (() => {
