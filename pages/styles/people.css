@@ -142,6 +142,11 @@ h2 {
     font-weight: bold;
 }
 
+.profile .current-state {
+    padding: 0;
+    margin: 0;
+}
+
 .profile :not(.name):not(img) {
     font-size: 0.89rem;
     color: rgb(46, 46, 46);
