@@ -197,6 +197,9 @@ main p,
 footer p {
     font-family: 'PT Sans';
     line-height: 24.96px;
+}
+
+footer p {
     text-align: center;
 }
 
