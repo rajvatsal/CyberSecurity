@@ -87,11 +87,16 @@ section h2 {
     margin: 0 0 20px;
 }
 
-.mentor__left-column li {
+.mentor__left-column li,
+.mentor__right-column p:last-child {
     padding-right: 15px;
     color: rgb(59, 59, 59);
     font-size: 0.89rem;
     text-align: center !important;
+}
+
+.mentor__right-column p:last-child {
+    text-align: justify !important;
 }
 
 .mentor__google-scholar {
@@ -139,6 +144,13 @@ h2 {
 
 .profile .name {
     font-weight: bold;
+}
+
+.profile .current-state {
+    color: rgb(19, 19, 19) !important;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
 }
 
 .profile :not(.name):not(img) {
