@@ -197,6 +197,7 @@ main p,
 footer p {
     font-family: 'PT Sans';
     line-height: 24.96px;
+    text-align: center;
 }
 
 .content a,
@@ -396,6 +397,10 @@ footer>.contact img:hover {
 
     .nav-bar {
         top: 0;
+    }
+
+    footer p {
+        font-size: 0.89rem;
     }
 }
 
