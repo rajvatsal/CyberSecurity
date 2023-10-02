@@ -139,6 +139,10 @@ marquee {
     animation: marquee 10s linear infinite;
 }
 
+.marquee ul:hover {
+    animation-play-state: paused;
+}
+
 .marquee {
     overflow: hidden;
     flex: 1 1 auto;
