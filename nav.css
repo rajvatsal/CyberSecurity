@@ -204,7 +204,8 @@ footer p {
 }
 
 .content a,
-footer a {
+footer a,
+.notifications__list a {
     text-decoration: underline;
     color: var(--text-color);
 }
@@ -214,7 +215,8 @@ footer a {
 }
 
 .content a:hover:not(.anchor-link),
-footer p a:hover {
+footer p a:hover,
+.notifications__list a:hover {
     text-decoration: none;
     border-bottom: 2px solid rgb(245, 98, 0);
 }
