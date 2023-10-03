@@ -89,15 +89,17 @@ const animateSlideShow = (() => {
 })();
 
 const addCarouselShadow = (() => {
+  let {intervalID} = animateSlideShow;;
+  const {automateSlideShow} = animateSlideShow;
   const _cont = document.querySelector('.carousel-container');
   const _overlay = _cont.querySelector('.overlay');
   
   _cont.addEventListener('mouseover', (e) => {
     _overlay.classList.add('over');
-    clearInterval(animateSlideShow.intervalID);
+    clearInterval(intervalID);
   });
   _cont.addEventListener('mouseleave', (e) => {
     _overlay.classList.remove('over');
-    animateSlideShow.intervalID = animateSlideShow.automateSlideShow();
+    intervalID = automateSlideShow();
   });
 })();
