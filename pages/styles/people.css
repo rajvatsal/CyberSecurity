@@ -144,6 +144,8 @@ h2 {
 
 .profile .name {
     font-weight: bold;
+    align-self: stretch;
+    text-align: center;
 }
 
 .profile .current-state {
