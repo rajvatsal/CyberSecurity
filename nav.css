@@ -19,6 +19,7 @@
     --aside-line-height: 19.92px;
     --footer__contact-us-size: 40px;
     --footer-padding-horizontal: 20px;
+    --footer-btm-pad: 35px;
 }
 
 /*Josh's reset START*/
@@ -230,7 +231,7 @@ h2 {
 footer {
     background-color: rgb(7, 7, 7);
     min-height: 500px;
-    padding: 0 50px 25px;
+    padding: 0 50px var(--footer-btm-pad);
     color: white;
     margin-top: 300px;
 }
@@ -253,7 +254,7 @@ footer ul a {
 footer h4 {
     font-family: 'PT Sans', Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
 }
 
 footer p {
@@ -335,7 +336,7 @@ section.top {
 }
 
 section.bottom {
-    padding: 25px var(--footer-padding-horizontal) 0;
+    padding: var(--footer-btm-pad) var(--footer-padding-horizontal) 0;
 }
 
 
