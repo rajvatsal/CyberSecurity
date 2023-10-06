@@ -18,6 +18,7 @@
     --border-color: rgba(0, 189, 173);
     --aside-line-height: 19.92px;
     --footer__contact-us-size: 40px;
+    --footer-padding-horizontal: 20px;
 }
 
 /*Josh's reset START*/
@@ -284,7 +285,7 @@ section.top {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 50px 50px 300px;
+    padding: 50px var(--footer-padding-horizontal) 139px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.212);
     gap: 70px;
     position: relative;
@@ -293,13 +294,13 @@ section.top {
 .top__right-column__attribution {
     position: absolute !important;
     bottom: 0;
-    right: 0;
+    right: var(--footer-padding-horizontal);
     display: flex;
 }
 
 .top__right-column__links {
     display: flex;
-    gap: 50px;
+    gap: 135px;
 }
 
 .top__right-column ul {
@@ -333,7 +334,7 @@ section.top {
 }
 
 section.bottom {
-    padding: 25px 50px 0;
+    padding: 25px var(--footer-padding-horizontal) 0;
 }
 
 
