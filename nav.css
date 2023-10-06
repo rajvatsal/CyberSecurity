@@ -262,6 +262,12 @@ section.top {
     display: flex;
 }
 
+.top__right-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
 .top__right-column {
     display: flex;
     gap: 50px;
@@ -276,6 +282,14 @@ section.top {
 
 .top__left-column ul img {
     height: 100%;
+}
+
+.top__left-column img[alt="logo of acsr"] {
+    margin-bottom: 39px;
+}
+
+.top__left-column p {
+    margin-bottom: 22px;
 }
 
 section.bottom {
