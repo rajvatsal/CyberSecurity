@@ -264,7 +264,7 @@ footer p {
 
 .top__right-column__attribution p,
 .top__right-column__attribution a {
-    font-size: 1rem;
+    font-size: 0.95rem;
     text-shadow: none;
     color: rgba(255, 255, 255, 77%);
     font-family: 'Urbanist', sans-serif !important;
@@ -276,9 +276,9 @@ footer p {
     background-size: cover;
     position: relative;
     display: inline-block;
-    width: 13px;
-    height: 13px;
-    top: -5px;
+    width: 10px;
+    height: 10px;
+    top: -3px;
 }
 
 section.top {
