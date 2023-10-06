@@ -301,7 +301,9 @@ section.top {
 
 .top__right-column__links {
     display: flex;
-    gap: 135px;
+    column-gap: 135px;
+    row-gap: 36px;
+    flex-wrap: wrap;
 }
 
 .top__right-column ul {
