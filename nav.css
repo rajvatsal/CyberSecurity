@@ -243,6 +243,41 @@ footer ul {
 footer ul a {
     text-decoration: none;
     color:white;
+    font-size: 1.0625rem;
+    font-family: Urbanist, Helvetica, sans-serif;
+    font-weight: 500;
+    text-shadow: 0 0 rgba(255, 255, 255, 0.281);
+}
+
+footer h4 {
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.0625rem;
+}
+
+footer p {
+    font-family: 'PT Sans', sans-serif !important;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 77%);
+}
+
+.top__right-column__attribution p,
+.top__right-column__attribution a {
+    font-size: 1rem;
+    text-shadow: none;
+    color: rgba(255, 255, 255, 77%);
+    font-family: 'Urbanist', sans-serif !important;
+}
+
+.top__right-column__attribution a:after {
+    content: "";
+    background-image: url(./images/icons8-external-link.svg);
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    top: -5px;
 }
 
 section.top {
@@ -260,6 +295,11 @@ section.top {
     bottom: 0;
     right: 0;
     display: flex;
+}
+
+.top__right-column__links {
+    display: flex;
+    gap: 50px;
 }
 
 .top__right-column ul {
