@@ -331,6 +331,8 @@ section.top {
 
 .top__left-column img[alt="logo of acsr"] {
     margin-bottom: 39px;
+    position: relative;
+    left: -20px;
 }
 
 .top__left-column p {
