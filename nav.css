@@ -19,7 +19,7 @@
     --aside-line-height: 19.92px;
     --footer__contact-us-size: 45px;
     --footer-padding-horizontal: 20px;
-    --footer-btm-pad: 35px;
+    --footer-btm-pad: 15px;
 }
 
 /*Josh's reset START*/
@@ -265,7 +265,7 @@ footer p {
 
 .top__right-column__attribution p,
 .top__right-column__attribution a {
-    font-size: 0.85rem;
+    font-size: 0.90rem;
     text-shadow: none;
     color: rgba(255, 255, 255, 77%);
     font-family: 'Urbanist', sans-serif !important;
@@ -339,6 +339,10 @@ section.top {
 
 section.bottom {
     padding: var(--footer-btm-pad) var(--footer-padding-horizontal) 0;
+}
+
+section.bottom p {
+    font-size: 0.85rem;
 }
 
 
