@@ -313,6 +313,7 @@ section.top {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+    padding-top: 38px;
 }
 
 .top__left-column ul {
