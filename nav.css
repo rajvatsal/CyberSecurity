@@ -285,7 +285,7 @@ section.top {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px 50px 300px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.212);
     gap: 70px;
     position: relative;
 }
