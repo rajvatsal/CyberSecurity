@@ -263,12 +263,16 @@ footer p {
     color: rgba(255, 255, 255, 77%);
 }
 
-.top__right-column__attribution p,
 .top__right-column__attribution a {
     font-size: 0.90rem;
     text-shadow: none;
     color: rgba(255, 255, 255, 77%);
     font-family: 'Urbanist', sans-serif !important;
+}
+
+.top__right-column__attribution li {
+    display: flex;
+    gap: 15px;
 }
 
 .top__right-column__attribution a:after {
@@ -533,5 +537,10 @@ section.bottom p {
     section.bottom {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    section.bottom p,
+    .top__right-column__attribution a{
+        font-size: 0.6rem;
     }
 }
