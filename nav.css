@@ -514,10 +514,24 @@ section.bottom p {
         text-align: left !important;
     }
 
-    footer img {
-        width: 40px;
+    footer {
+        padding: 0 var(--footer-padding-horizontal) var(--footer-btm-pad);
     }
+
+    section.top {
+        padding: 50px 0 139px;
+    }
+
     footer section>h2 {
         font-size: 1.5rem;
+    }
+
+    .top__right-column__attribution {
+        left: 0;
+    }
+
+    section.bottom {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
