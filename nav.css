@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,500&family=PT+Sans:wght@400;700&family=Phudu:wght@500;700&family=Urbanist:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=PT+Sans:wght@700&display=swap');
 
 :root {
     scroll-behavior: smooth;
@@ -167,7 +167,7 @@ header.up {
 }
 
 .nav-bar__logo>img {
-    height:80px;
+    height:64px;
 }
 
 .nav-bar__banner-text {
@@ -243,6 +243,21 @@ footer {
     padding: 0 50px var(--footer-btm-pad);
     color: white;
     margin-top: 300px;
+}
+
+.top__left-column__logo h4 {
+    font-family: Koulen, sans-serif;
+    font-size: 2.5rem;
+    color: #C4F1F7;
+    font-weight: 500;
+    position: relative;
+    top: -30px;
+    left: 4px;
+}
+
+.top__left-column__logo {
+    position: relative;
+    left: -4px;
 }
 
 footer ul {
@@ -343,8 +358,9 @@ section.top {
 }
 
 .top__left-column img[alt="logo of acsr"] {
-    margin-bottom: 39px;
     position: relative;
+    aspect-ratio: 1;
+    width: 120px;
     left: -20px;
 }
 
