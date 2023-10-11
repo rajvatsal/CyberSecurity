@@ -21,13 +21,14 @@
     --footer-padding-horizontal: 20px;
     --footer-btm-pad: 15px;
 }
+
 /* Make all fonts and images smoother on browsers that don't have good anti-aliasing like chrome */
 /* p, h1, h2, h3, h4, h5, h6, a, img { 
     --webkit-transform-style: preserve-3d;
     --webkit-transform: rotateZ(0.05deg);
     transform-style: preserve-3d;
     transform: rotateZ(0.05deg);
-}*/
+} */
 
 /*Josh's reset START*/
 
