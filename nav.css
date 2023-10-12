@@ -97,7 +97,7 @@ body {
 header {
     z-index: 11;
     position: sticky;
-    top: -60px;
+    top: -80px;
     transition: all 100ms ease-in;
 }
 
@@ -236,7 +236,7 @@ main p {
 
 section,
 h2 {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 85px;
 }
 
 footer {
