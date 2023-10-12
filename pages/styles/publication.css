@@ -17,7 +17,7 @@ main p{
     margin-bottom: 0;
 }
 
-#international-journals li:nth-child(7) {
+#international-journals li:nth-child(7)>p :last-child {
     color: red;
     font-style: italic;
 }
