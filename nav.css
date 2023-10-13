@@ -84,7 +84,7 @@ body {
     grid-area: 1 / 1 / 2 / -1;
     padding-right: 20px;
     background-color: rgb(0 31 90);
-    height: 60px;
+    height: 80px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.082);
     overflow-y: hidden;
     display: flex;
@@ -97,7 +97,7 @@ body {
 header {
     z-index: 11;
     position: sticky;
-    top: -60px;
+    top: -80px;
     transition: all 100ms ease-in;
 }
 
@@ -114,6 +114,7 @@ header.up {
     align-items: center;
     height: 100%;
     gap: 20px;
+    min-width: 600px;
 }
 
 .nav-bar__primary-navigation,
@@ -235,7 +236,7 @@ main p {
 
 section,
 h2 {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 85px;
 }
 
 footer {
