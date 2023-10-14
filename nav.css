@@ -503,7 +503,7 @@ section.bottom p {
     .mobile-nav-toggle[aria-expanded='true'] {
         background-image: url('./images/cross-white.svg');
         position: fixed;
-        top: 30px;
+        top: 40px;
     }
 
     .nav-bar {
