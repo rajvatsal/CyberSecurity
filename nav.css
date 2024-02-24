@@ -20,6 +20,7 @@
     --footer__contact-us-size: 45px;
     --footer-padding-horizontal: 20px;
     --footer-btm-pad: 15px;
+    --letter-spacing: -1px;
 }
 
 /* Make all fonts and images smoother on browsers that don't have good anti-aliasing like chrome */
@@ -199,6 +200,7 @@ main h2 {
     font-family: 'Josefin Sans';
     margin: var(--main-h2-margin);
     border-bottom: 1px solid black;
+    letter-spacing: var(--letter-spacing);
 }
 
 main h3 {
@@ -232,6 +234,7 @@ main p {
     text-decoration: none;
     border-bottom: 0;
     display: flex;
+    letter-spacing: var(--letter-spacing);
 }
 
 section,
