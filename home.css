@@ -136,7 +136,7 @@ marquee {
 
 .marquee ul {
     height: fit-content;
-    animation: marquee 13s linear infinite;
+    animation: marquee 25s linear infinite;
 }
 
 .marquee ul:hover {
@@ -150,7 +150,7 @@ marquee {
 
 @keyframes marquee {
     0% {
-        transform: translateY(40%);
+        transform: translateY(400px);
     }
 
     100% {
