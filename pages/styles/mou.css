@@ -1,41 +1,41 @@
 :root {
-    --nav-tab-height: 60px;
+  --nav-tab-height: 60px;
 }
 
 body {
-    grid-template: 1fr / 1fr 25fr minmax(300px, 1.8fr);
+  grid-template: 1fr / 1fr 25fr minmax(300px, 1.8fr);
 }
 
 main {
-    grid-area: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 h2 {
-    line-height: 1.03;
+  line-height: 1.03;
 }
 
 main #images {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .anchor-link:hover::before {
-   background-image: url('../../images/link.png');
-   content:"";
-   position: absolute;
-   left: -25px;
-   top: -2px;
-   background-size: cover;
-   width: 18px;
-   height: 18px;
+  background-image: url("../../images/link.png");
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
 }
 
 #images img {
-    margin-top: 30px;
-    scroll-margin-top: 100px;
-    align-self: center;
+  margin-top: 30px;
+  scroll-margin-top: 100px;
+  align-self: center;
 }
 #images p {
-    margin-top: 0;
-    padding-bottom: 30px;
+  margin-top: 0;
+  padding-bottom: 30px;
 }
