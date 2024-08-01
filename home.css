@@ -173,3 +173,8 @@ marquee {
     width: 18px;
     height: 18px;
 }
+
+.recent_notification {
+color: red;
+font-weight:bold;
+}
