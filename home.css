@@ -174,7 +174,7 @@ marquee {
     height: 18px;
 }
 
-.recent_notification {
+.recent_notification p {
 color: red;
 font-weight:bold;
 }
