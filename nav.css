@@ -589,3 +589,8 @@ section.bottom p {
     font-size: 0.6rem;
   }
 }
+
+.top__left-column ul > li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
