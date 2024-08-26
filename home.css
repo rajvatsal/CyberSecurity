@@ -133,6 +133,10 @@ main img {
     width: 100% !important;
     height: max(250px, 56vw) !important;
   }
+
+  .yt-vid {
+    width: 100% !important;
+  }
 }
 
 .notifications {
@@ -187,4 +191,9 @@ marquee {
 .recent_notification p {
   color: red;
   font-weight: bold;
+}
+
+.yt-vid {
+  aspect-ratio: 560/315;
+  width: 60%;
 }
