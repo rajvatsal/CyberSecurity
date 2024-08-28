@@ -144,3 +144,37 @@ section.bottom p {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1070px) {
+  footer p {
+    font-size: 0.89rem;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  footer {
+    padding: 0 var(--footer-padding-horizontal) var(--footer-btm-pad);
+  }
+
+  section.top {
+    padding: 50px 0 139px;
+  }
+
+  footer section > h2 {
+    font-size: 1.5rem;
+  }
+
+  .top__right-column__attribution {
+    left: 0;
+  }
+
+  section.bottom {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section.bottom p,
+  .top__right-column__attribution a {
+    font-size: 0.6rem;
+  }
+}

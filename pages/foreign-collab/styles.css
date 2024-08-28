@@ -40,7 +40,7 @@ body {
 .collab-container {
   padding: var(--pg-pad);
   display: grid;
-  grid-template: 1fr / repeat(auto-fit, minmax(360px, 1fr));
+  grid-template: 1fr / repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--pg-pad);
 }
 
@@ -113,4 +113,8 @@ body {
 
 .learn-more:hover {
   background-color: #414141;
+}
+
+@media only screen (max-width: 420px) {
+  --pg-pd: 5px;
 }
