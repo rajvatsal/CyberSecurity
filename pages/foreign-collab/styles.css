@@ -1,4 +1,6 @@
 @import url("../../utility.css");
+@import url("../../navigation.css");
+@import url("../../footer.css");
 
 :root {
   --pg-pad: 40px;
@@ -18,20 +20,20 @@ body {
   max-width: 100%;
 }
 
-header {
+.banner {
   background-color: var(--clr-secondary);
   padding-inline: var(--pg-pad);
   padding-block: 90px;
   color: white;
 }
 
-header > h2 {
+.banner > h2 {
   font-weight: 400;
   font-size: 1rem;
   margin-block: 5px;
 }
 
-header > h1 {
+.banner > h1 {
   margin-block: 0px;
 }
 

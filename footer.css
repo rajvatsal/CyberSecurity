@@ -1,0 +1,146 @@
+footer {
+  background-color: rgb(7, 7, 7);
+  min-height: 500px;
+  padding: 0 50px var(--footer-btm-pad);
+  color: white;
+  margin-top: 300px;
+}
+
+.top__left-column__logo h4 {
+  font-family: Koulen, sans-serif;
+  font-size: 2.5rem;
+  color: #c4f1f7;
+  font-weight: 500;
+  position: relative;
+  top: -30px;
+  left: 4px;
+}
+
+.top__left-column__logo {
+  position: relative;
+  left: -4px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.0625rem;
+  font-family: Urbanist, Helvetica, sans-serif;
+  font-weight: 500;
+  text-shadow: 0 0 rgba(255, 255, 255, 0.281);
+}
+
+footer h4 {
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+footer p {
+  font-family: "PT Sans", sans-serif !important;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 77%);
+}
+
+.top__right-column__attribution a {
+  font-size: 0.9rem;
+  text-shadow: none;
+  color: rgba(255, 255, 255, 77%);
+  font-family: "Urbanist", sans-serif !important;
+}
+
+.top__right-column__attribution li {
+  display: flex;
+  gap: 15px;
+}
+
+.top__right-column__attribution a:after {
+  content: "";
+  background-image: url(./images/icons8-external-link.svg);
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  top: -3px;
+}
+
+section.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px var(--footer-padding-horizontal) 139px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.212);
+  gap: 70px;
+  position: relative;
+}
+
+.top__right-column__attribution {
+  position: absolute !important;
+  bottom: 0;
+  right: var(--footer-padding-horizontal);
+  display: flex;
+}
+
+.top__right-column__links {
+  display: flex;
+  column-gap: 135px;
+  row-gap: 36px;
+  flex-wrap: wrap;
+}
+
+.top__right-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.top__right-column {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-top: 38px;
+}
+
+.top__left-column ul {
+  display: grid;
+  grid-template: var(--footer__contact-us-size) / repeat(
+      5,
+      var(--footer__contact-us-size)
+    );
+  grid-auto-columns: var(--footer__contact-us-size);
+}
+
+.top__left-column ul img {
+  height: 100%;
+}
+
+.top__left-column img[alt="logo of acsr"] {
+  position: relative;
+  aspect-ratio: 1;
+  width: 120px;
+  left: -20px;
+}
+
+.top__left-column p {
+  margin-bottom: 22px;
+}
+
+section.bottom {
+  padding: var(--footer-btm-pad) var(--footer-padding-horizontal) 0;
+}
+
+section.bottom p {
+  font-size: 0.85rem;
+}
+
+.top__left-column ul > li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
