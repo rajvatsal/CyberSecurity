@@ -115,6 +115,12 @@ body {
   background-color: #414141;
 }
 
+@media only screen (max-width: 950px) {
+  h1 {
+    letter-spacing: 0px;
+  }
+}
+
 @media only screen (max-width: 420px) {
   --pg-pd: 5px;
 }
