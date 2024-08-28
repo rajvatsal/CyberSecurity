@@ -36,8 +36,20 @@
           <li>
             <a href="publications.html">Publications </a>
           </li>
-          <li>
-            <a href="mou.html" class="current-page">MoU</a>
+          <li
+            class="connections"
+            onmouseleave="document.querySelector('.dd-connections').classList.remove('show');"
+          >
+            <a
+              href="#"
+              onclick="return false;"
+              onmouseenter="document.querySelector('.dd-connections').classList.add('show');"
+              >Connections</a
+            >
+            <div class="dd-connections">
+              <a href="mou.html">MoU (Asian University Taiwan)</a>
+              <a href="foreign-collab/index.html">Foreign Collaborations</a>
+            </div>
           </li>
         </ul>
 
