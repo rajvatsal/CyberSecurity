@@ -38,7 +38,7 @@ header > h1 {
 .collab-container {
   padding: var(--pg-pad);
   display: grid;
-  grid-template: 1fr / repeat(auto-fit, minmax(300px, 1fr));
+  grid-template: 1fr / repeat(auto-fit, minmax(360px, 1fr));
   gap: var(--pg-pad);
 }
 
@@ -106,4 +106,9 @@ header > h1 {
   font-size: 0.85rem;
   border-radius: 5px;
   margin-top: auto;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  background-color: #414141;
 }
