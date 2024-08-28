@@ -9,6 +9,8 @@
 
   --fs-800: clamp(1.7rem, 3.51vw, 3rem);
   --fs-700: clamp(1.25rem, 2vw, var(1.5rem));
+
+  --clr-secondary: #00001a;
 }
 
 img {

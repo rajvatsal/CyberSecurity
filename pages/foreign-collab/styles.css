@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background-color: black;
+  background-color: var(--clr-secondary);
   padding-inline: var(--pg-pad);
   padding-block: 90px;
   color: white;
@@ -100,7 +100,7 @@ header > h1 {
   font-weight: 500;
   font-family: var(--ff-primary);
   color: white;
-  background-color: black;
+  background-color: var(--clr-secondary);
   padding: 6px 16px;
   border: 0;
   font-size: 0.85rem;
