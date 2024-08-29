@@ -12,3 +12,11 @@
 main {
   grid-row: 2 / 3;
 }
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project > li::marker {
+  content: "";
+}
