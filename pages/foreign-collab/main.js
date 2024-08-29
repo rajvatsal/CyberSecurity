@@ -143,6 +143,9 @@ function display(name) {
 }
 
 function main() {
+	const mainTag = document.querySelector("main");
+	const profs = [...document.querySelectorAll(".profs")];
+
 	mainContent.addEventListener("mousedown", (e) => {
 		const name = e.target.getAttribute("data-name");
 		mainContent.style.display = "none";
@@ -150,10 +153,7 @@ function main() {
 	});
 }
 
-const mainTag = document.querySelector("main");
 const mainContent = document.querySelector(".content.main");
-const profs = [...document.querySelectorAll(".profs")];
-
 const btnGoBack = `<button class="back-button" onmousedown="clickHandlerGoBack()">go back</button>`;
 
 main();

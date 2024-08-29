@@ -127,6 +127,10 @@ body {
   :root {
     --pg-pad: 5px;
   }
+
+  .content.side {
+    grid-template: repeat(2, auto) / 1fr !important;
+  }
 }
 
 .content.side {
