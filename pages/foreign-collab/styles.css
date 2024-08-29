@@ -65,6 +65,8 @@ body {
   object-fit: cover;
   object-position: top right;
   flex: 0 0 auto;
+  border-radius: 5px;
+  border: 1px solid #00000047;
 }
 
 .intro__text > * {
@@ -73,6 +75,7 @@ body {
 
 .intro__text__uni {
   font-size: 1rem;
+  color: var(--clr-secondary);
 }
 
 .intro__text__speciality {
@@ -91,15 +94,8 @@ body {
   flex: 1 1 auto;
 }
 
-/* .about::before { */
-/*   content: ""; */
-/*   position: absolute; */
-/*   inset: 0 0 0 0; */
-/*   background-image: linear-gradient(180deg, transparent, white); */
-/* } */
-/**/
 .learn-more {
-  font-weight: 500;
+  font-weight: bold;
   font-family: var(--ff-primary);
   color: white;
   background-color: var(--clr-secondary);
@@ -115,12 +111,48 @@ body {
   background-color: #414141;
 }
 
-@media only screen (max-width: 950px) {
+@media only screen and (max-width: 950px) {
   h1 {
-    letter-spacing: 0px;
+    letter-spacing: -1px;
   }
 }
 
-@media only screen (max-width: 420px) {
-  --pg-pd: 5px;
+@media only screen and (max-width: 420px) {
+  :root {
+    --pg-pad: 5px;
+  }
+
+  .content.side {
+    grid-template: repeat(2, auto) / 1fr !important;
+  }
+}
+
+.content.side {
+  display: grid;
+  grid-template: 1fr / 1fr 2fr;
+  padding: var(--pg-pad);
+  gap: var(--pg-pad);
+}
+
+.content.side > .right.info {
+  color: var(--clr-200);
+}
+
+.content.side > .right.info h3 {
+  color: var(--clr-secondary);
+}
+
+.back-button {
+  background-color: var(--clr-secondary);
+  cursor: pointer;
+  border: 0;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+.back-button:hover {
+  background-color: grey;
 }
