@@ -128,3 +128,14 @@ body {
     --pg-pad: 5px;
   }
 }
+
+.content.side {
+  display: grid;
+  grid-template: 1fr / 1fr 2fr;
+  padding: var(--pg-pad);
+  gap: var(--pg-pad);
+}
+
+.content.side > .right.info {
+  color: var(--clr-200);
+}
