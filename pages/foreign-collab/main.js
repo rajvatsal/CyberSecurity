@@ -147,6 +147,7 @@ function main() {
 	const profs = [...document.querySelectorAll(".profs")];
 
 	mainContent.addEventListener("mousedown", (e) => {
+    if(!e.target.classList.contains("learn-more"))return;
 		const name = e.target.getAttribute("data-name");
 		mainContent.style.display = "none";
 		mainTag.insertAdjacentHTML("beforeend", display(name));
