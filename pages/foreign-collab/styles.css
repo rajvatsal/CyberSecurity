@@ -65,6 +65,8 @@ body {
   object-fit: cover;
   object-position: top right;
   flex: 0 0 auto;
+  border-radius: 5px;
+  border: 1px solid #00000047;
 }
 
 .intro__text > * {
