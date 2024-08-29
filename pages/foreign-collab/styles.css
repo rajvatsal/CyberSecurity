@@ -75,6 +75,7 @@ body {
 
 .intro__text__uni {
   font-size: 1rem;
+  color: var(--clr-secondary);
 }
 
 .intro__text__speciality {
@@ -93,15 +94,8 @@ body {
   flex: 1 1 auto;
 }
 
-/* .about::before { */
-/*   content: ""; */
-/*   position: absolute; */
-/*   inset: 0 0 0 0; */
-/*   background-image: linear-gradient(180deg, transparent, white); */
-/* } */
-/**/
 .learn-more {
-  font-weight: 500;
+  font-weight: bold;
   font-family: var(--ff-primary);
   color: white;
   background-color: var(--clr-secondary);
@@ -142,4 +136,23 @@ body {
 
 .content.side > .right.info {
   color: var(--clr-200);
+}
+
+.content.side > .right.info h3 {
+  color: var(--clr-secondary);
+}
+
+.back-button {
+  background-color: var(--clr-secondary);
+  cursor: pointer;
+  border: 0;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+.back-button:hover {
+  background-color: grey;
 }

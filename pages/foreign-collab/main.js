@@ -154,6 +154,6 @@ function main() {
 }
 
 const mainContent = document.querySelector(".content.main");
-const btnGoBack = `<button class="back-button" onmousedown="clickHandlerGoBack()">go back</button>`;
+const btnGoBack = `<button class="back-button" onmousedown="clickHandlerGoBack()">Go back</button>`;
 
 main();
