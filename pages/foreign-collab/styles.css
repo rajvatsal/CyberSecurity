@@ -18,6 +18,7 @@ body {
   font-family: var(--ff-primary);
   margin: 0;
   max-width: 100%;
+  background-color: #00001a0f;
 }
 
 .banner {
@@ -45,12 +46,13 @@ body {
 }
 
 .profs {
-  border: 2px solid var(--clr-300);
-  padding: 7px;
+  border: 1px solid #00001a12;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 14px;
+  background-color: white;
 }
 
 .intro {
@@ -89,7 +91,7 @@ body {
 }
 
 .about {
-  line-height: 1.5;
+  line-height: 1.35em;
   position: relative;
   flex: 1 1 auto;
 }
