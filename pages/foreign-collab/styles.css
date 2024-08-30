@@ -45,7 +45,7 @@ body {
 }
 
 .profs {
-  border: 2px solid var(--clr-300);
+  border: 2px solid #00001a12;
   padding: 7px;
   border-radius: 5px;
   display: flex;
@@ -89,7 +89,7 @@ body {
 }
 
 .about {
-  line-height: 1.5;
+  line-height: 1.35em;
   position: relative;
   flex: 1 1 auto;
 }
