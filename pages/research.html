@@ -82,43 +82,38 @@
             >
           </h3>
           <p>
-            <strong>Project Description:</strong> Security holds great
-            significance in this new era of on-demand virtual computing. As
-            software and hardware update daily, malware is also modifying its
-            behaviour rapidly. Some researchers are still working in this area
-            to handle the recent cyber-attacks in critical virtualization
-            ecosystems. The existing research works may not be suitable with the
-            existing updated virtualization environment as they have been
-            validated with older datasets. In this project, a deep neural
-            network (DNN) based malware (Trojan) detection approach has been
-            proposed and implemented, called DeepHyperv, to detect the malware
-            threats in a virtualization environment by doing the deep virtual
-            memory analysis. Direct access to the analysis components is
-            prohibited in the proposed architecture by deploying them inside the
-            privileged domain of the hypervisor. The process execution logs are
-            collected at the hypervisor using the memory introspection technique
-            with the support of recent hardware and software configurations of
-            analysis setup and virtualization environment. The logs are
-            pre-processed and converted into a discrete feature vector matrix.
-            The approach uses DNN to learn & test the extracted features at the
-            hypervisor. The approach is validated in the test bed setup of our
-            lab, and results seem to promising.
+            <strong>Project Description:</strong> The evolving behavior of the
+            attacks may affect the decision boundaries of the trained machine
+            learning models. The issue has not been well investigated,
+            especially with hypervisor-based security solutions where virtual
+            machine (VM)’s network artifacts are introspected and analyzed. In
+            this project, we proposed a sustainable and explainable
+            flow-filtering-based concept drift-driven network intrusion
+            detection approach, called ‘SFC-NIDS’ which introspects network
+            activities by analyzing VM traffic profile. The VM traffic is
+            captured and pre-processed at the hypervisor to extract important
+            network artifacts. The redundant and trivial network flows have been
+            filtered using the proposed gradient descent-based flow filtering
+            mechanism and validated using explainability. SFC-NIDS employs
+            auto-encoders to reconstruct the traffic features to capture
+            additional patterns. Afterward, the 1D-convolution neural network
+            has been employed to learn and detect malicious attack flows. The
+            model’s sustainability is ensured by integrating the drift detection
+            mechanism with the decision model to retrain it with evolving attack
+            patterns. The approach is validated in the test bed setup of our
+            lab, and results seem promising.
           </p>
           <p>
-            <strong>datasets:</strong> A malware dataset (in the form of exe) is
-            taken from San Jose State University (SJSU) on request. Some of the
-            benign applications have been downloaded from SourceForge and some
-            of them are taken from system32 folder of Windows system. In the
-            first scenario, 2592 benign samples and 9896 malware samples are
-            considered (termed HyperMalware) and in the later scenario 25000
-            malware samples and 20000 benign samples have been considered
-            (termed HyperMalware’).
+            <strong>Datasets created:</strong> We have extracted virtual network
+            traffic artifacts collected at the hypervisor of five malware
+            families. The framework is also validated using the KDD99 dataset.
           </p>
           <p>
-            <strong>Publication:</strong> A. Gaur, A. Singh, A. Nautiyal, G.
-            Kothari, <strong>P. Mishra</strong>, A. Jha. “DeepHyperv: A deep
-            neural network based virtual memory analysis for malware detection
-            at hypervisor-layer”, In “AICAPS 2023” pp. 1-6, 2023.
+            <strong>Publication:</strong> A. Singh, <strong>P. Mishra</strong>,
+            P. Vinod, A. Gaur, and M. Conti, “Sfc-nids: a sustainable and
+            explainable flow filtering based concept drift-driven security
+            approach for network introspection,” Cluster Computing, pp. 1–26,
+            2024 [Q1 Journal]
             <a
               href="https://ieeexplore.ieee.org/document/10074347"
               target="_blank"
@@ -200,7 +195,7 @@
             resilient when compared to previously proposed techniques.
           </p>
           <p>
-            <strong>datasets Used:</strong> vServiceInspector dataset provided
+            <strong>Datasets Used:</strong> vServiceInspector dataset provided
             by the University of New Mexico through their repositories and
             Barecloud dataset from University of California are being used here.
           </p>
@@ -255,7 +250,7 @@
             target layer of deployment at the virtualization layer.
           </p>
           <p>
-            <strong>datasets Used:</strong> A network attack dataset (UNSW-NB
+            <strong>Datasets Used:</strong> A network attack dataset (UNSW-NB
             15) has been considered during analysis purpose along with various
             XAI machine learning (ML) algorithms. A case study on “Explainable
             Artificial Intelligence based Network Intrusion Detection System”
@@ -302,7 +297,7 @@
             database.
           </p>
           <p>
-            <strong>datasets Used:</strong> Two datasets have been used in our
+            <strong>Datasets Used:</strong> Two datasets have been used in our
             project; one is the most recent Amazon Web Service (AWS) based
             network flow dataset, CICIDS2017. The second dataset is the
             self-generated dataset, MALNetwork2023, developed in the test bed of
@@ -339,7 +334,7 @@
             demonstrated to interpret the IDS results.
           </p>
           <p>
-            <strong>datasets Used:</strong> The malware dataset (executables)
+            <strong>Datasets Used:</strong> The malware dataset (executables)
             have been taken from online source which consists of four malware
             families: Zbot, Vundo, Vobfus, and Zeroaccess.
           </p>
@@ -382,7 +377,7 @@
             and dataset. The results seem to be promising.
           </p>
           <p>
-            <strong>datasets used:</strong> We have collected Trojan malware
+            <strong>Datasets used:</strong> We have collected Trojan malware
             dataset from Virus Share (2013) and Evasive malware dataset from
             online sources.
           </p>
