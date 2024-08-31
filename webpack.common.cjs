@@ -19,7 +19,7 @@ module.exports = {
 			title: "",
 			filename: "index.html",
 			scriptLoading: "defer",
-			favicon: path.resolve(__dirname, "src/icons/logo.png"),
+			favicon: path.resolve(__dirname, "src/assets/icons/logo.png"),
 		}),
 	],
 	module: {

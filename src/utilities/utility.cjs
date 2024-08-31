@@ -1,5 +1,2 @@
-const wpContextObj = require.context("../icons/", true);
-module.exports = wpContextObj.keys().reduce((acc, key) => {
-	acc[key.replace("./", "").split(".")[0]] = key;
-	return acc;
-}, {});
+require.context("../assets/images", true, /\.(png|jpeg|jpg)$/);
+require.context("../assets/icons", false, /\.(png|svg)$/);

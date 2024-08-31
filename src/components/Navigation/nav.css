@@ -322,7 +322,7 @@ footer p {
 
 .top__right-column__attribution a:after {
   content: "";
-  background-image: url(./icons8-external-link.svg);
+  background-image: url(../../assets/icons/icons8-external-link.svg);
   background-size: cover;
   position: relative;
   display: inline-block;
@@ -510,7 +510,7 @@ section.bottom p {
     width: 1.5rem;
     background-size: cover;
     aspect-ratio: 1;
-    background-image: url("./ham-white.svg");
+    background-image: url("../../assets/icons/ham-white.svg");
     background-color: transparent;
     border: 0;
     right: 1rem;
@@ -519,7 +519,7 @@ section.bottom p {
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url("./cross-white.svg");
+    background-image: url("../../assets/icons/cross-white.svg");
     position: fixed;
     top: 40px;
   }

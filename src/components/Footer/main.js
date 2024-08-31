@@ -1,7 +1,7 @@
+import "./GmailLink.js";
 import "./styles.css";
 
-export default
-`<footer id="footer">
+export default `<footer id="footer">
     <section class="top">
       <div class="top__left-column">
         <div class="top__left-column__logo">
@@ -50,4 +50,4 @@ export default
         © <span class="current-year">2023</span> Advanced Cyber Security Research Lab (ACSR). All rights reserved
       </p>
     </section>
-  </footer>`
+  </footer>`;

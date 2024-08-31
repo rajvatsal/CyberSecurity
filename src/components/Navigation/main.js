@@ -1,5 +1,8 @@
-export default 
-    `<nav class="nav-bar">
+import "./PeekABooNavbar.js";
+import "./ResponsiveNavbar.js";
+import "./nav.css";
+
+export default `<nav class="nav-bar">
       <h2 class="nav-bar__banner-text">Advanced Cyber Security Research Lab (School of Technology)</h2>
       <ul id="primary-navigation" class="nav-bar__primary-navigation" data-visible="false">
         <li>
