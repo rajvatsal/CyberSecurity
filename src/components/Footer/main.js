@@ -1,0 +1,53 @@
+import "./styles.css";
+
+export default
+`<footer id="footer">
+    <section class="top">
+      <div class="top__left-column">
+        <div class="top__left-column__logo">
+          <img src="./assets/images/logo.png" alt="logo of acsr" />
+          <h4>ACSR</h4>
+        </div>
+        <h4>Address</h4>
+        <p>Doon University, Deharadun, Uttrakhand, India (PIN code 248001)</p>
+        <h4>Contact</h4>
+        <p>dr.preetimishra@doonuniversity.ac.in</p>
+        <ul>
+          <li><img src="./images/linked-in-icon.svg" alt="linked-in" /></li>
+          <li><img src="./images/facebook.svg" alt="facebook" /></li>
+          <li><img src="./images/twitter-icon.svg" alt="twitter" /></li>
+          <li><a href="https://github.com/acsr-du" target="_blank"><img src="./images/github-icon.svg"
+                alt="github" /></a></li>
+          <li class="email"><img src="./images/gmail-icons/size-256.svg" alt="gmail" /></li>
+        </ul>
+      </div>
+
+      <div class="top__right-column">
+        <div class="top__right-column__links">
+          <ul>
+            <li><a href="./pages/research.html">Research</a></li>
+            <li><a href="./pages/project.html">Projects</a></li>
+            <li><a href="./pages/people.html">People</a></li>
+            <li><a href="./index.html">About Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="./pages/mou.html">MoU</a></li>
+            <li><a href="./pages/datasets.html">Publications</a></li>
+          </ul>
+        </div>
+        <div class="top__right-column__attribution">
+          <ul>
+            <li>
+              <p><a href="https://icons8.com/" target="_blank">Icons made by Icones8</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <p>
+        © <span class="current-year">2023</span> Advanced Cyber Security Research Lab (ACSR). All rights reserved
+      </p>
+    </section>
+  </footer>`

@@ -3,23 +3,23 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	entry: {
-		app: "./src/main.js",
+		app: "./src/App.js",
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
-    publicPath: '/',
+		publicPath: "/",
 		filename: "[name].bundle.js",
 		clean: true,
 		assetModuleFilename: "[name].asset.[ext]",
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: "./src/template.html",
+			template: "./src/index.html",
 			inject: "body",
 			title: "",
 			filename: "index.html",
 			scriptLoading: "defer",
-			favicon: "./src/assets/images/logo.png",
+			favicon: path.resolve(__dirname, "src/icons/logo.png"),
 		}),
 	],
 	module: {
@@ -31,6 +31,7 @@ module.exports = {
 			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
 				type: "asset/resource",
+				generator: { filename: "[name][ext]" },
 			},
 			{
 				test: /\.(woff|woff2|otf|ttf|eot)$/i,

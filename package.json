@@ -2,7 +2,7 @@
   "name": "Advanced Cybersecurity Research Lab",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "App.js",
   "type": "module",
   "scripts": {
     "test": "jest",
