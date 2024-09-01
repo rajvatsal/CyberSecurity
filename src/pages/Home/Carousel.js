@@ -1,46 +1,48 @@
-const automateSlideShow = () => setInterval(_changeSlideImage, 2000);
+const automateSlideShow = (data) =>
+	setInterval(changeSlideImage.bind(this, data), 2000);
+const changeSlideImage = (data) => {
+	const { maxSlide, slides } = data;
 
-const _changeSlideImage = () => {
-	if (_curSlide === _maxSlide) _curSlide = 0;
-	else _curSlide++;
+	data.curSlide = data.curSlide === maxSlide ? 0 : data.curSlide + 1;
 
-	_slides.forEach((_slide, _indx) => {
-		_slide.style.transform = `translateX(${100 * (_indx - _curSlide)}%)`;
+	slides.forEach((slide, indx) => {
+		slide.style.transform = `translateX(${100 * (indx - data.curSlide)}%)`;
 	});
 };
 
-const _slides = document.querySelectorAll(".carousel-slide");
+export default function () {
+	let curSlide = 0;
+	const nextSlide = document.querySelector("#nextBtn");
+	const prevSlide = document.querySelector("#prevBtn");
+	const slides = document.querySelectorAll(".carousel-slide");
+	const maxSlide = slides.length - 1;
+	const slideData = { slides, maxSlide, curSlide };
 
-_slides.forEach((_slide, _indx) => {
-	_slide.style.transform = `translateX(${_indx * 100}%)`;
-});
-
-let _curSlide = 0;
-const _maxSlide = _slides.length - 1;
-
-const _nextSlide = document.querySelector("#nextBtn");
-const _prevSlide = document.querySelector("#prevBtn");
-
-_nextSlide.addEventListener("click", _changeSlideImage);
-
-_prevSlide.addEventListener("click", () => {
-	if (!_curSlide) _curSlide = _maxSlide;
-	else _curSlide--;
-
-	_slides.forEach((_slide, _indx) => {
-		_slide.style.transform = `translateX(${100 * (_indx - _curSlide)}%)`;
+	slides.forEach((slide, indx) => {
+		slide.style.transform = `translateX(${indx * 100}%)`;
 	});
-});
-let intervalID = automateSlideShow();
 
-const _cont = document.querySelector(".carousel-container");
-const _overlay = _cont.querySelector(".overlay");
+	nextSlide.addEventListener("click", changeSlideImage.bind(this, slideData));
+	prevSlide.addEventListener("click", () => {
+		if (!curSlide) curSlide = maxSlide;
+		else curSlide--;
 
-_cont.addEventListener("mouseover", () => {
-	_overlay.classList.add("over");
-	clearInterval(intervalID);
-});
-_cont.addEventListener("mouseleave", () => {
-	_overlay.classList.remove("over");
-	intervalID = automateSlideShow();
-});
+		slides.forEach((slide, indx) => {
+			slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+		});
+	});
+
+	const cont = document.querySelector(".carousel-container");
+	const overlay = cont.querySelector(".overlay");
+	let intervalID = automateSlideShow(slideData);
+
+	cont.addEventListener("mouseover", () => {
+		overlay.classList.add("over");
+		clearInterval(intervalID);
+	});
+
+	cont.addEventListener("mouseleave", () => {
+		overlay.classList.remove("over");
+		intervalID = automateSlideShow(slideData);
+	});
+}

@@ -37,6 +37,13 @@ module.exports = {
 				test: /\.(woff|woff2|otf|ttf|eot)$/i,
 				type: "asset/resource" /* This is called a MIME/media type/content type */,
 			},
+			{
+				test: /\.html$/i,
+				loader: "html-loader",
+				options: {
+					sources: false,
+				},
+			},
 		],
 	},
 };
