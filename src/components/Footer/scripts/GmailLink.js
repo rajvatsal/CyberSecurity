@@ -5,5 +5,8 @@ const _copyContent = () => {
 };
 
 const _text = "dr.preetimishra@doonuniversity.ac.in";
-const _mail = document.querySelector(".email");
-_mail.addEventListener("click", _copyContent);
+
+export default () => {
+	const _mail = document.querySelector(".email");
+	_mail.addEventListener("click", _copyContent);
+};
