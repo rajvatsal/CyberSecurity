@@ -100,7 +100,7 @@ section h2 {
 }
 
 .mentor__google-scholar {
-  background-image: url("../../images/google-scholar-dark.svg");
+  background-image: url("../../assets/icons/google-scholar-dark.svg");
   aspect-ratio: 1 / 1;
   width: 50px;
   background-size: cover;

@@ -1,5 +1,5 @@
 .anchor-link:hover::before {
-  background-image: url("../../images/link.png");
+  background-image: url("../../assets/icons/link.png");
   content: "";
   position: absolute;
   left: -25px;

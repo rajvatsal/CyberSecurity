@@ -3,7 +3,7 @@
 }
 
 body {
-  grid-template: 1fr / 1fr 25fr minmax(300px, 1.8fr);
+  grid-template: 1fr / 1fr 25fr minmax(300px, 1lo.8fr);
 }
 
 main {
@@ -20,7 +20,7 @@ main #images {
 }
 
 .anchor-link:hover::before {
-  background-image: url("../../images/link.png");
+  background-image: url("../../assets/icons/logo.png");
   content: "";
   position: absolute;
   left: -25px;
