@@ -7,7 +7,14 @@ const pages = context.keys().reduce((acc, k) => {
 		// Class names must be same as lowercase page names with '-page' extension
 		// Name of directory containing page must be equal to page name && first letter capital
 		className: `${pageName}-page`,
-		load: context(k).default,
+		load: () => {
+			// documentElement is css :root equivalent in js
+			// scroll to top on loading another page cuz footer links glitch without it
+			document.documentElement.style.scrollBehavior = "auto";
+			document.documentElement.scrollTop = 0;
+			context(k).default();
+			document.documentElement.removeAttribute("style");
+		},
 	};
 	return acc;
 }, {});
