@@ -1,3 +1,4 @@
+// require.context imports/requires all the files inside a directory that match a regex pattern
 require.context("../assets/images", true, /\.(png|jpeg|jpg)$/);
 require.context("../assets/icons", false, /\.(png|svg)$/);
 
@@ -10,6 +11,7 @@ function importAll(r) {
 }
 
 function loadAll(r) {
+	// biome-ignore lint/complexity/noForEach: <explanation>
 	r.keys().forEach((k) => r(k).default());
 }
 
