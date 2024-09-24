@@ -1,3 +1,5 @@
+/* fix: When you open people page it's style overflow to other pages */
+
 main {
   display: flex;
   flex-direction: column;

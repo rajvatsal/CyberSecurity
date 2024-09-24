@@ -1,0 +1,90 @@
+:root {
+  scroll-behavior: smooth;
+
+  --text-color: rgb(0, 0, 0);
+  --nav-tab-height: 40px;
+  --mdn-nav-heading: 1.2rem;
+  --mdn-nav-links: 0.833rem;
+  --aside-h2-margin-bottom: 10px;
+  --mdn-h2: 2.48rem;
+  --mdn-h3: 1.5rem;
+  --main-h2-margin: 2.0866em 0 1.55em;
+  --main-h3-margin: 1.42em 0 0.42em;
+  --background-color: rgba(0, 156, 104, 0.171);
+  --border-color: rgba(0, 189, 173);
+  --aside-line-height: 19.92px;
+  --footer__contact-us-size: 45px;
+  --footer-padding-horizontal: 20px;
+  --footer-btm-pad: 15px;
+  --letter-spacing: -1px;
+}
+/* something I might remove  */
+
+section,
+h2 {
+  scroll-margin-top: 85px;
+}
+
+main p {
+  text-align: justify;
+  padding-top: 1ch;
+}
+
+body {
+  margin: 0 0;
+  gap: 40px;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+/* something I might remove  */
+
+body * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img:not(footer img),
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}

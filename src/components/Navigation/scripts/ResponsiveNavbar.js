@@ -1,5 +1,5 @@
 export default () => {
-	const primaryNav = document.querySelector(".nav-bar__primary-navigation");
+	const primaryNav = document.querySelector(".nav-bar__inter-page-nav");
 	const navToggle = document.querySelector(".mobile-nav-toggle");
 
 	navToggle.addEventListener("click", () => {
