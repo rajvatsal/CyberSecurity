@@ -1,191 +1,191 @@
 /* fix: When you open people page it's style overflow to other pages */
 
-main {
+div.content.people {
   display: flex;
   flex-direction: column;
   gap: 0;
-}
 
-#mentor {
-  display: flex;
-  gap: 10px;
-  margin-top: 60px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 1300px) {
-  main {
-    padding: 0 15px;
-  }
-  section:not(#mentor):not(footer > section) {
-    margin: 100px 0 0 !important;
-  }
-}
-
-@media only screen and (min-width: 1300px) {
   #mentor {
-    flex-wrap: nowrap;
-    padding: 0 70px 0 0;
+    display: flex;
+    gap: 10px;
+    margin-top: 60px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
-}
 
-@media only screen and (max-width: 760px) {
-  main {
-    padding: 0 15px;
+  @media only screen and (max-width: 1300px) {
+    main {
+      padding: 0 15px;
+    }
+    section:not(#mentor):not(footer > section) {
+      margin: 100px 0 0 !important;
+    }
   }
-}
 
-.mentor__right-column {
-  flex: 1.5 1.5 auto;
-}
+  @media only screen and (min-width: 1300px) {
+    #mentor {
+      flex-wrap: nowrap;
+      padding: 0 70px 0 0;
+    }
+  }
 
-#mentor .mentor__right-column > h2,
-section h2 {
-  font-family: "Josefin Sans", Arial, sans-serif, Helvetica, "Robot Sans";
-  font-size: 1.53rem;
-  margin-top: 20px;
-  border: 0;
-}
+  @media only screen and (max-width: 760px) {
+    main {
+      padding: 0 15px;
+    }
+  }
 
-.mentor__right-column > h3 {
-  font-family: "Josefin Sans", Arial, sans-serif, Helvetica, "Robot Sans";
-  font-size: 1.12rem;
-}
+  .mentor__right-column {
+    flex: 1.5 1.5 auto;
+  }
 
-.mentor__right-column > p {
-  font-family: "PT Sans", Helvetica, sans-serif;
-  font-size: 0.89rem;
-  line-height: 21.36px;
-}
+  #mentor .mentor__right-column > h2,
+  section h2 {
+    font-family: "Josefin Sans", Arial, sans-serif, Helvetica, "Robot Sans";
+    font-size: 1.53rem;
+    margin-top: 20px;
+    border: 0;
+  }
 
-.mentor__left-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 1 auto;
-}
+  .mentor__right-column > h3 {
+    font-family: "Josefin Sans", Arial, sans-serif, Helvetica, "Robot Sans";
+    font-size: 1.12rem;
+  }
 
-.mentor__left-column > img,
-.profile img:first-child {
-  width: 130px;
-}
+  .mentor__right-column > p {
+    font-family: "PT Sans", Helvetica, sans-serif;
+    font-size: 0.89rem;
+    line-height: 21.36px;
+  }
 
-.mentor__left-column > img {
-  margin-top: 20px;
-}
+  .mentor__left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+  }
 
-.mentor__left-column > a:hover {
-  transform: scale(1.1);
-  border: 0;
-}
+  .mentor__left-column > img,
+  .profile img:first-child {
+    width: 130px;
+  }
 
-.mentor__left-column > ul {
-  display: flex;
-  max-width: 100%;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin: 0 0 20px;
-}
+  .mentor__left-column > img {
+    margin-top: 20px;
+  }
 
-.mentor__left-column li,
-.mentor__right-column p:last-child {
-  padding-right: 15px;
-  color: rgb(59, 59, 59);
-  font-size: 0.89rem;
-  text-align: center !important;
-}
+  .mentor__left-column > a:hover {
+    transform: scale(1.1);
+    border: 0;
+  }
 
-.mentor__right-column p:last-child {
-  text-align: justify !important;
-}
+  .mentor__left-column > ul {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 0 20px;
+  }
 
-.mentor__google-scholar {
-  background-image: url("../../assets/icons/google-scholar-dark.svg");
-  aspect-ratio: 1 / 1;
-  width: 50px;
-  background-size: cover;
-}
+  .mentor__left-column li,
+  .mentor__right-column p:last-child {
+    padding-right: 15px;
+    color: rgb(59, 59, 59);
+    font-size: 0.89rem;
+    text-align: center !important;
+  }
 
-.team {
-  display: grid;
-  grid-template: 1fr / repeat(auto-fit, minmax(200px, 1fr));
-  gap: 90px;
-  row-gap: 100px;
-  column-gap: 160px;
-}
+  .mentor__right-column p:last-child {
+    text-align: justify !important;
+  }
 
-h2 {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem;
-}
+  .mentor__google-scholar {
+    background-image: url("../../assets/icons/google-scholar-dark.svg");
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    background-size: cover;
+  }
 
-h2::before,
-h2::after {
-  content: "";
-  flex-grow: 1;
-  background-color: black;
-  height: 1px;
-  display: inline-block;
-}
+  .team {
+    display: grid;
+    grid-template: 1fr / repeat(auto-fit, minmax(200px, 1fr));
+    gap: 90px;
+    row-gap: 100px;
+    column-gap: 160px;
+  }
 
-.profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  h2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+  }
 
-.profile p {
-  margin-bottom: 0;
-  margin-top: 10px;
-  text-align: center;
-}
+  h2::before,
+  h2::after {
+    content: "";
+    flex-grow: 1;
+    background-color: black;
+    height: 1px;
+    display: inline-block;
+  }
 
-.profile .name {
-  font-weight: bold;
-  align-self: stretch;
-  text-align: center !important;
-}
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.profile .current-state {
-  color: rgb(19, 19, 19) !important;
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
-}
+  .profile p {
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
 
-.profile :not(.name):not(img) {
-  font-size: 0.89rem;
-  color: rgb(46, 46, 46);
-  text-align: center !important;
-}
+  .profile .name {
+    font-weight: bold;
+    align-self: stretch;
+    text-align: center !important;
+  }
 
-.profile img:first-child {
-  width: 100px;
-}
+  .profile .current-state {
+    color: rgb(19, 19, 19) !important;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+  }
 
-.profile .email {
-  width: 25px;
-}
+  .profile :not(.name):not(img) {
+    font-size: 0.89rem;
+    color: rgb(46, 46, 46);
+    text-align: center !important;
+  }
 
-.profile .research,
-.profile .internship-duration {
-  margin-top: 0;
-}
+  .profile img:first-child {
+    width: 100px;
+  }
 
-section:not(#mentor):not(footer > section) {
-  margin: 100px 50px 0;
-}
+  .profile .email {
+    width: 25px;
+  }
 
-@media only screen and (max-width: 450px) {
+  .profile .research,
+  .profile .internship-duration {
+    margin-top: 0;
+  }
+
   section:not(#mentor):not(footer > section) {
-    margin: 200px 0;
+    margin: 100px 50px 0;
   }
 
-  section h2:not(footer h2) {
-    font-size: 1.2rem !important;
+  @media only screen and (max-width: 450px) {
+    section:not(#mentor):not(footer > section) {
+      margin: 200px 0;
+    }
+
+    section h2:not(footer h2) {
+      font-size: 1.2rem !important;
+    }
   }
 }

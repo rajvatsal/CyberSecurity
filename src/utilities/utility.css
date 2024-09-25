@@ -18,6 +18,31 @@
   --footer-btm-pad: 15px;
   --letter-spacing: -1px;
 }
+
+#main-content {
+  font-family: "PT Sans", "Open Sans", Roboto, "Josefin Sans";
+  color: var(--text-color);
+  font-size: 1rem;
+
+  h2 {
+    font-size: clamp(1.7rem, 3.51vw, 3rem);
+    font-family: "Josefin Sans";
+    margin: var(--main-h2-margin);
+    letter-spacing: var(--letter-spacing);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 2vw, var(--mdn-h3));
+    font-family: "Josefin Sans";
+    margin: var(--main-h3-margin);
+  }
+
+  p {
+    font-family: "PT Sans";
+    line-height: 24.96px;
+  }
+}
+
 /* something I might remove  */
 
 section,

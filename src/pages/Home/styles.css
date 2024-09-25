@@ -1,165 +1,5 @@
 @import url("../../layouts/docs.css");
 
-:root {
-  --carousel-height: 70%;
-  --carousel-width: 95%;
-}
-
-.hero-section {
-  /*Hero styling*/
-  height: calc(100vh - 60px);
-  display: grid;
-  grid-template: 1fr / 4fr 3fr;
-  gap: 10px;
-  place-items: center;
-  grid-area: 1 / 1 / 2 / 3;
-}
-
-.carousel-container {
-  width: max(var(--carousel-width), 660px);
-  height: max(var(--carousel-height), 400px);
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel-slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transition: all 0.5s;
-}
-
-.carousel-slide > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  user-select: none;
-}
-
-#prevBtn {
-  left: 0;
-}
-
-#nextBtn {
-  right: 0;
-}
-
-.btn {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-}
-
-.btn:hover {
-  cursor: pointer;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 9;
-  background-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 29%),
-    transparent,
-    rgba(0, 0, 0, 29%)
-  );
-}
-
-.overlay.over {
-  background-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.582),
-    transparent,
-    rgba(0, 0, 0, 0.589)
-  );
-}
-
-.notifications {
-  margin: 0 10px 0 0;
-  height: max(var(--carousel-height), 400px);
-  max-height: 100vh;
-  overflow: hidden;
-}
-
-.notifications__heading {
-  font-family: "Josefin Sans";
-  font-size: var(--mdn-h3);
-  margin: 0 0 10px 0;
-  text-align: center;
-}
-
-.notifications__list li {
-  margin-top: 50px;
-}
-
-.notifications__list {
-  margin: 0;
-  font-family: "PT Sans";
-  text-align: justify;
-  height: 100%;
-}
-
-main > section.content #heading {
-  margin-top: 0px;
-}
-
-main {
-  gap: 120px 40px;
-}
-
-section.content {
-  grid-column: 1 / 2;
-}
-
-main img {
-  width: 100%;
-}
-
-@media only screen and (max-width: 1200px) {
-  .hero-section {
-    height: fit-content;
-    place-items: start;
-    gap: 90px;
-    grid-template: 1fr / 1fr !important;
-  }
-
-  .carousel-container {
-    width: 100% !important;
-    height: max(250px, 56vw) !important;
-  }
-
-  .yt-vid {
-    width: 100% !important;
-  }
-}
-
-.notifications {
-  display: flex;
-  flex-direction: column;
-}
-
-marquee {
-  flex: 1 1 auto;
-}
-
-.marquee ul {
-  height: fit-content;
-  animation: marquee 90s linear infinite;
-}
-
-.marquee ul:hover {
-  animation-play-state: paused;
-}
-
-.marquee {
-  overflow: hidden;
-  flex: 1 1 auto;
-}
-
 @keyframes marquee {
   0% {
     transform: translateY(400px);
@@ -170,28 +10,184 @@ marquee {
   }
 }
 
-#navigation {
-  grid-area: 2 / 2 / -1 / 3;
-  margin-top: 37px;
-}
+div.content.home {
+  --carousel-height: 70%;
+  --carousel-width: 95%;
 
-.anchor-link:hover::before {
-  background-image: url("../../assets/icons/link.png");
-  content: "";
-  position: absolute;
-  left: -25px;
-  top: -2px;
-  background-size: cover;
-  width: 18px;
-  height: 18px;
-}
+  .hero-section {
+    /*Hero styling*/
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template: 1fr / 4fr 3fr;
+    gap: 10px;
+    place-items: center;
+    grid-area: 1 / 1 / 2 / 3;
+  }
 
-.recent_notification p {
-  color: red;
-  font-weight: bold;
-}
+  .carousel-container {
+    width: max(var(--carousel-width), 660px);
+    height: max(var(--carousel-height), 400px);
+    position: relative;
+    overflow: hidden;
+  }
 
-.yt-vid {
-  aspect-ratio: 560/315;
-  width: 60%;
+  .carousel-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+  }
+
+  .carousel-slide > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+  }
+
+  #prevBtn {
+    left: 0;
+  }
+
+  #nextBtn {
+    right: 0;
+  }
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 29%),
+      transparent,
+      rgba(0, 0, 0, 29%)
+    );
+  }
+
+  .overlay.over {
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.582),
+      transparent,
+      rgba(0, 0, 0, 0.589)
+    );
+  }
+
+  .notifications {
+    margin: 0 10px 0 0;
+    height: max(var(--carousel-height), 400px);
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  .notifications__heading {
+    font-family: "Josefin Sans";
+    font-size: var(--mdn-h3);
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  .notifications__list li {
+    margin-top: 50px;
+  }
+
+  .notifications__list {
+    margin: 0;
+    font-family: "PT Sans";
+    text-align: justify;
+    height: 100%;
+  }
+
+  main > section.content #heading {
+    margin-top: 0px;
+  }
+
+  main {
+    gap: 120px 40px;
+  }
+
+  section.content {
+    grid-column: 1 / 2;
+  }
+
+  main img {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .hero-section {
+      height: fit-content;
+      place-items: start;
+      gap: 90px;
+      grid-template: 1fr / 1fr !important;
+    }
+
+    .carousel-container {
+      width: 100% !important;
+      height: max(250px, 56vw) !important;
+    }
+
+    .yt-vid {
+      width: 100% !important;
+    }
+  }
+
+  .notifications {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .marquee ul {
+    height: fit-content;
+    animation: marquee 90s linear infinite;
+  }
+
+  .marquee ul:hover {
+    animation-play-state: paused;
+  }
+
+  .marquee {
+    overflow: hidden;
+    flex: 1 1 auto;
+  }
+
+  #navigation {
+    grid-area: 2 / 2 / -1 / 3;
+    margin-top: 37px;
+  }
+
+  .anchor-link:hover::before {
+    background-image: url("../../assets/icons/link.png");
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: -2px;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+  }
+
+  .recent_notification p {
+    color: red;
+    font-weight: bold;
+  }
+
+  .yt-vid {
+    aspect-ratio: 560/315;
+    width: 60%;
+  }
 }
