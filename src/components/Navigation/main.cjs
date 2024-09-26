@@ -8,7 +8,7 @@ module.exports = () => {
 	return { html, scripts };
 };
 
-on("ChangePagePre", ({ className }) => {
+on("ChangePagePost", ({ className }) => {
 	const btn = document.querySelector(`#inter-page-nav  .${className}`);
 
 	document

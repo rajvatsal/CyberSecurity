@@ -23,6 +23,6 @@ pages.home.load();
 for (const page in pages) {
 	const { className, load } = pages[page];
 	Array.from(document.getElementsByClassName(className), (link) =>
-		link.addEventListener("mousedown", load),
+		link.addEventListener("mousedown", load.bind(pages[page])),
 	);
 }

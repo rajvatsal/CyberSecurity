@@ -10,12 +10,12 @@ const pages = context.keys().reduce((acc, k) => {
 		load: function () {
 			// documentElement is css :root equivalent in js
 			// scroll to top on loading another page cuz footer links glitch without it
-			emit("ChangePagePre", { className: this.className });
+			emit("ChangePagePre");
 			document.documentElement.style.scrollBehavior = "auto";
 			document.documentElement.scrollTop = 0;
 			context(k).default();
 			document.documentElement.removeAttribute("style");
-			emit("ChangePagePost", {});
+			emit("ChangePagePost", { className: this.className });
 		},
 	};
 	return acc;
