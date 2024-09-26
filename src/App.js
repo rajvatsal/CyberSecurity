@@ -1,6 +1,6 @@
 import "./utilities/utility.css";
-import { loadAll } from "./utilities/utility.cjs";
-import { pages } from "./utilities/pages.cjs";
+import { loadAll } from "./utilities/Utility.cjs";
+import { pages } from "./utilities/Pages.cjs";
 import Navigation from "./components/Navigation/main.cjs";
 import Footer from "./components/Footer/main.cjs";
 
